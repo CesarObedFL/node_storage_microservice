@@ -1,13 +1,13 @@
 {
   "name": "node_storage_microservice",
   "version": "1.0.0",
-  "description": "",
+  "description": "Generic microservice built in Node.js to store JSON files with information relevant to projects; an attempt at database emulation.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "CesarObedFL",
   "license": "ISC",
   "devEngines": {
     "packageManager": {
