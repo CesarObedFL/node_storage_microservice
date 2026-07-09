@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url';
 import path from 'path';
 
 // project file_structure files
-import storageRoutes from './routes/routesStorage.js';
+import storage_routes from './routes/routes_storage.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -23,7 +23,7 @@ app.get('/health', (req, res) => {
     res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
-app.use('/storage', storageRoutes);
+app.use('/storage', storage_routes);
 
 
 app.listen(port, () => {

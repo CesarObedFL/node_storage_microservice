@@ -1,62 +1,63 @@
 import express from 'express';
-import fs from 'fs/promises';
-import path from 'path';
-import AppError from '../utils/errorHandler.js';
+import {
+    list_files,
+    get_file,
+    create_or_replace_file,
+    update_file,
+    patch_file,
+    delete_project,
+    create_project
+} from '../controllers/storage_controller.js';
 
 const router = express.Router();
-const storagePath = process.env.STORAGE_PATH || './storage';
-const DEFAULT_PROJECT = 'demo';  // proyecto fijo para pruebas
 
-function getSafePath(project, filename) {
-    const base = path.resolve(storagePath);
-    const fullPath = path.resolve(base, project, filename);
-    if (!fullPath.startsWith(base)) {
-        throw new AppError('Acceso denegado: ruta no permitida', 403);
-    }
-    return fullPath;
-}
+/**
+ * POST /storage/project/:project_name
+ * Creates a new project folder.
+ */
+router.post('/project/:project_name', create_project);
 
-// GET /storage  -> listar archivos
-router.get('/', async (req, res, next) => {
-    try {
-        const project = DEFAULT_PROJECT;
-        const projectDir = path.resolve(storagePath, project);
-        let files = [];
-        try {
-            const allFiles = await fs.readdir(projectDir);
-            files = allFiles.filter(f => f.endsWith('.json'));
-        } catch (error) {
-            if (error.code !== 'ENOENT') {
-                throw new AppError('Error al listar archivos', 500);
-            }
-            // si no existe la carpeta, devolvemos lista vacía
-        }
-        res.json({ project, files });
-    } catch (error) {
-        next(error);
-    }
-});
+/**
+ * DELETE /storage/:project
+ * Deletes the entire project folder and all its contents.
+ */
+router.delete('/:project', delete_project);
 
-// GET /storage/:filename  -> leer un archivo específico
-router.get('/:filename', async (req, res, next) => {
-    try {
-        const { filename } = req.params;
-        const project = DEFAULT_PROJECT;
-        const filePath = getSafePath(project, filename);
-        let data;
-        try {
-            const content = await fs.readFile(filePath, 'utf8');
-            data = JSON.parse(content);
-        } catch (error) {
-            if (error.code === 'ENOENT') {
-                throw new AppError('Archivo no encontrado', 404);
-            }
-            throw new AppError('Error al leer el archivo', 500);
-        }
-        res.json(data);
-    } catch (error) {
-        next(error);
-    }
+/**
+ * GET /storage/:project
+ * Lists all .json files in the specified project.
+ */
+router.get('/:project', list_files);
+
+/**
+ * GET /storage/:project/:filename
+ * Retrieves the content of a specific JSON file.
+ */
+router.get('/:project/:filename', get_file);
+
+/**
+ * POST /storage/:project/:filename
+ * Creates a new file or replaces an existing one.
+ */
+router.post('/:project/:filename', create_or_replace_file);
+
+/**
+ * PUT /storage/:project/:filename
+ * Merges the provided data with the existing file (upsert).
+ */
+router.put('/:project/:filename', update_file);
+
+/**
+ * PATCH /storage/:project/:filename
+ * Merges the provided data with the existing file (same as PUT).
+ */
+router.patch('/:project/:filename', patch_file);
+
+/**
+ * Test route to verify that the router is mounted correctly.
+ */
+router.get('/test', (req, res) => {
+    res.json({ message: 'Router working' });
 });
 
 export default router;

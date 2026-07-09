@@ -22,3 +22,14 @@ storage-service/
         └── data.json
     └── project_2/
         └── data.json
+
+
+routes:
+
+POST   /storage/project/:project_name   → create_project
+DELETE /storage/:project                → delete_project
+GET    /storage/:project                → list_files
+GET    /storage/:project/:filename      → get_file
+POST   /storage/:project/:filename      → create_or_replace_file
+PUT    /storage/:project/:filename      → update_file
+PATCH  /storage/:project/:filename      → patch_file
