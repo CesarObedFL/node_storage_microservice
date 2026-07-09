@@ -3,6 +3,9 @@ import express from 'express';
 import { fileURLToPath } from 'url';
 import path from 'path';
 
+// project file_structure files
+import storageRoutes from './routes/routesStorage.js';
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -19,6 +22,8 @@ app.use(express.json());
 app.get('/health', (req, res) => {
     res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
+
+app.use('/storage', storageRoutes);
 
 
 app.listen(port, () => {
