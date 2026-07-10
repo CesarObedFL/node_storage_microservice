@@ -23,11 +23,14 @@ app.get('/health', (req, res) => {
     res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
-app.use('/', storage_routes); 
+app.use('/', storage_routes);
 
 
-app.listen(port, () => {
-    console.log(`running server in http://localhost:${port}`);
-});
+// ✅ Solo inicia si no estamos en modo test
+if (process.env.NODE_ENV !== 'test') {
+    app.listen(port, () => {
+        console.log(`✅ Server running on http://localhost:${port}`);
+    });
+}
 
-
+export default app;
