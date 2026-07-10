@@ -1,61 +1,44 @@
 import express from 'express';
 import {
+    create_project,
+    delete_project,
+    list_all_projects,
     list_files,
     get_file,
     create_or_replace_file,
     update_file,
     patch_file,
-    delete_project,
-    create_project
+    list_records,
+    get_record,
+    add_record,
+    update_record,
+    delete_record
 } from '../controllers/storage_controller.js';
 
 const router = express.Router();
 
-/**
- * POST /storage/project/:project_name
- * Creates a new project folder.
- */
-router.post('/project/:project_name', create_project);
+// ==================== ADMIN ROUTES ====================
+router.get('/admin/projects', list_all_projects);
 
-/**
- * DELETE /storage/:project
- * Deletes the entire project folder and all its contents.
- */
-router.delete('/:project', delete_project);
+// ==================== PROJECT MANAGEMENT ====================
+router.post('/storage/project/:project_name', create_project);
+router.delete('/storage/:project', delete_project);
 
-/**
- * GET /storage/:project
- * Lists all .json files in the specified project.
- */
-router.get('/:project', list_files);
+// ==================== FILE CRUD ====================
+router.get('/storage/:project', list_files);
+router.get('/storage/:project/:filename', get_file);
+router.post('/storage/:project/:filename', create_or_replace_file);
+router.put('/storage/:project/:filename', update_file);
+router.patch('/storage/:project/:filename', patch_file);
 
-/**
- * GET /storage/:project/:filename
- * Retrieves the content of a specific JSON file.
- */
-router.get('/:project/:filename', get_file);
+// ==================== RECORDS (ARRAY) CRUD ====================
+router.get('/storage/:project/:filename/records', list_records);
+router.get('/storage/:project/:filename/records/:record_id', get_record);
+router.post('/storage/:project/:filename/records', add_record);
+router.put('/storage/:project/:filename/records/:record_id', update_record);
+router.delete('/storage/:project/:filename/records/:record_id', delete_record);
 
-/**
- * POST /storage/:project/:filename
- * Creates a new file or replaces an existing one.
- */
-router.post('/:project/:filename', create_or_replace_file);
-
-/**
- * PUT /storage/:project/:filename
- * Merges the provided data with the existing file (upsert).
- */
-router.put('/:project/:filename', update_file);
-
-/**
- * PATCH /storage/:project/:filename
- * Merges the provided data with the existing file (same as PUT).
- */
-router.patch('/:project/:filename', patch_file);
-
-/**
- * Test route to verify that the router is mounted correctly.
- */
+// ==================== TEST ROUTE ====================
 router.get('/test', (req, res) => {
     res.json({ message: 'Router working' });
 });

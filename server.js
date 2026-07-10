@@ -23,7 +23,7 @@ app.get('/health', (req, res) => {
     res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
-app.use('/storage', storage_routes);
+app.use('/', storage_routes); 
 
 
 app.listen(port, () => {
