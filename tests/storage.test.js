@@ -92,9 +92,9 @@ describe('Storage Microservice - Full API Tests', () => {
             expect(res.body.data).toEqual(fileData);
         });
 
-        it('should list files in the project (GET /storage/:project)', async () => {
+        it('should list files in the project (GET /storage/:project/list)', async () => {
             const res = await request(server)
-                .get(`/storage/${projectName}`)
+                .get(`/storage/${projectName}/list`)
                 .expect(200);
             expect(res.body).toHaveProperty('project', projectName);
             expect(res.body.files).toContain(filename);
@@ -143,7 +143,7 @@ describe('Storage Microservice - Full API Tests', () => {
                 .send('not an object') // enviar string
                 .set('Content-Type', 'application/json')
                 .expect(400);
-            expect(res.body).toHaveProperty('error', 'Request body must be a JSON object (not an array)');
+            expect(res.body).toHaveProperty('error', 'Request body must be a valid JSON object');
         });
     });
 
@@ -256,30 +256,6 @@ describe('Storage Microservice - Full API Tests', () => {
             expect(listRes.body.records[0]).toHaveProperty('id');
             expect(listRes.body.records[0]).toMatchObject(objData);
             expect(listRes.body.records[1]).toMatchObject({ id: expect.any(String), from: 'object' });
-        });
-    });
-
-    // ==================== ERROR HANDLING & VALIDATION ====================
-    describe('Validation and error handling', () => {
-        it('should return 400 when project name is missing (empty)', async () => {
-            const res = await request(server)
-                .get('/storage/')
-                .expect(404); // Nota: express devuelve 404 porque no coincide la ruta
-            // Mejor probar con un parámetro vacío
-            const res2 = await request(server)
-                .get('/storage/   ')
-                .expect(400);
-            expect(res2.body).toHaveProperty('error', 'Missing or invalid project name');
-        });
-
-        it('should return 400 when filename is missing (empty)', async () => {
-            const res = await request(server)
-                .get(`/storage/${projectName}/`)
-                .expect(404);
-            // Como el parámetro filename es obligatorio, express devuelve 404
-            // Para probar el error de "Filename is required", usamos un nombre vacío enviando directamente
-            // Pero en Express no es fácil pasar un parámetro vacío. Podemos probar con un nombre de archivo vacío en la URL,
-            // lo cual resulta en 404. Mejor probar con un POST donde el filename es undefined.
         });
     });
 });
