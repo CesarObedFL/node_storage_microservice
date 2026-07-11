@@ -1,4 +1,4 @@
-import { token_admin } from '../config/config.js';
+import { master_token } from '../config/config.js';
 import AppError from '../utils/error_handler.js';
 
 /**
@@ -11,8 +11,8 @@ import AppError from '../utils/error_handler.js';
  * @throws {AppError} 401 if token is missing or invalid.
  */
 export function admin_auth_middleware(req, res, next) {
-    if (!token_admin) {
-        throw new Error('TOKEN_ADMIN not defined in .env');
+    if (!master_token) {
+        throw new Error('MASTER TOKEN not defined in .env');
     }
 
     const auth_header = req.headers.authorization;
@@ -21,7 +21,7 @@ export function admin_auth_middleware(req, res, next) {
     }
 
     const token = auth_header.split(' ')[1];
-    if (token !== token_admin) {
+    if (token !== master_token) {
         return next(new AppError('Invalid admin token', 401));
     }
 

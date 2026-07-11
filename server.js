@@ -3,7 +3,6 @@ import { fileURLToPath } from 'url';
 import path from 'path';
 import { port } from './config/config.js';
 import storage_routes from './routes/routes_storage.js';
-import admin_routes from './routes/routes_admin.js';
 import AppError from './utils/error_handler.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -12,7 +11,16 @@ const __dirname = path.dirname(__filename);
 const app = express();
 
 app.set('port', port);
-app.use(express.json());
+app.use(express.json({
+    verify: (req, res, buf, encoding) => {
+        try {
+            if (buf.length === 0) return;
+            JSON.parse(buf);
+        } catch (err) {
+            throw new AppError('Request body must be a valid JSON object', 400);
+        }
+    }
+}));
 
 // Health check
 app.get('/health', (req, res) => {
@@ -21,7 +29,6 @@ app.get('/health', (req, res) => {
 
 // Mount routes
 app.use('/', storage_routes);
-app.use('/', admin_routes);
 
 // Global error handler
 app.use((err, req, res, next) => {

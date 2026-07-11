@@ -1,7 +1,10 @@
 import express from 'express';
 import AppError from '../utils/error_handler.js';
+import { master_auth_middleware } from '../auth/master_auth.js';
 import { auth_middleware } from '../auth/auth_middleware.js';
+import { admin_auth_middleware } from '../auth/admin_auth_middleware.js';
 
+// Importar controladores de storage
 import {
     create_project,
     delete_project,
@@ -15,8 +18,15 @@ import {
     get_record,
     add_record,
     update_record,
-    delete_record
+    delete_record,
 } from '../controllers/storage_controller.js';
+
+// Importar controladores de tokens
+import {
+    create_token,
+    list_tokens,
+    revoke_token,
+} from '../controllers/token_controller.js';
 
 const router = express.Router();
 
@@ -46,6 +56,35 @@ router.param('filename', (req, res, next, filename) => {
     req.params.filename = filename.trim();
     next();
 });
+
+// ==================== ADMIN TOKEN MANAGEMENT ====================
+
+router.use('/admin/tokens', admin_auth_middleware);
+
+/**
+ * Apply master authentication to all /admin/tokens routes.
+ */
+router.use('/admin/tokens', master_auth_middleware);
+
+/**
+ * POST /admin/tokens
+ * Generates a new token for a project.
+ */
+router.post('/admin/tokens', create_token);
+
+/**
+ * GET /admin/tokens
+ * Lists all dynamic tokens.
+ */
+router.get('/admin/tokens', list_tokens);
+
+/**
+ * DELETE /admin/tokens/:token
+ * Revokes a token.
+ */
+router.delete('/admin/tokens/:token', revoke_token);
+
+
 
 // ==================== ADMIN ROUTES ====================
 router.get('/admin/projects', list_all_projects);

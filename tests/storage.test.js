@@ -1,24 +1,35 @@
 import request from 'supertest';
 import app from '../server.js';
-import { token_map } from '../config/config.js';
+import { load_token_map } from '../config/config.js';
 
+/**
+ * Full API test suite for the Storage Microservice with authentication.
+ * Tests all CRUD operations for projects, files, and records.
+ */
 describe('Storage Microservice - Full API Tests with Authentication', () => {
     let server;
     let project_name;
     let filename;
     let file_data;
-    let record_id;
     let valid_token;
 
     // ==================== SETUP ====================
-    beforeAll(() => {
-        // Get a valid token from the token map (first one available)
+    /**
+     * Set up the test environment:
+     * - Load token map and get a valid token
+     * - Start the server on a random port
+     * - Generate unique names for project and file
+     */
+    beforeAll(async () => {
+        // Load the token map from config (reads .env and tokens.json)
+        const token_map = await load_token_map();
         const tokens = Array.from(token_map.keys());
         if (tokens.length === 0) {
-            throw new Error('No tokens found in config. Please set PROJECT_TOKEN_* in .env');
+            throw new Error('No tokens found in config. Please set PROJECT_TOKEN_* in .env or create tokens via admin API.');
         }
         valid_token = tokens[0];
 
+        // Start the server
         server = app.listen(0);
 
         // Generate unique names to avoid collisions between test runs
@@ -29,6 +40,11 @@ describe('Storage Microservice - Full API Tests with Authentication', () => {
         file_data = { initial: 'value', number: 42 };
     });
 
+    /**
+     * Clean up after all tests:
+     * - Attempt to delete the test project (ignore errors)
+     * - Close the server
+     */
     afterAll(async () => {
         // Cleanup: delete the project if it exists (ignore errors)
         try {
@@ -38,7 +54,11 @@ describe('Storage Microservice - Full API Tests with Authentication', () => {
         } catch (_) {
             // ignore
         }
-        await new Promise((resolve) => server.close(resolve));
+
+        // Close the server
+        if (server && server.close) {
+            await new Promise((resolve) => server.close(resolve));
+        }
     });
 
     /**
@@ -195,9 +215,7 @@ describe('Storage Microservice - Full API Tests with Authentication', () => {
 
         it('should add a record (POST) - 201', async () => {
             const record = { name: 'Alice', age: 30 };
-            const res = await auth_request('post', `/storage/${project_name}/${records_filename}/records`, record).expect(
-                201
-            );
+            const res = await auth_request('post', `/storage/${project_name}/${records_filename}/records`, record).expect(201);
             expect(res.body).toHaveProperty('message', 'Record added');
             expect(res.body).toHaveProperty('id');
             expect(res.body.record).toMatchObject(record);
@@ -206,9 +224,7 @@ describe('Storage Microservice - Full API Tests with Authentication', () => {
 
         it('should add another record (POST)', async () => {
             const record = { name: 'Bob', age: 25 };
-            const res = await auth_request('post', `/storage/${project_name}/${records_filename}/records`, record).expect(
-                201
-            );
+            const res = await auth_request('post', `/storage/${project_name}/${records_filename}/records`, record).expect(201);
             expect(res.body).toHaveProperty('id');
         });
 
@@ -223,42 +239,32 @@ describe('Storage Microservice - Full API Tests with Authentication', () => {
         });
 
         it('should get a single record by ID (GET .../records/:id)', async () => {
-            const res = await auth_request('get', `/storage/${project_name}/${records_filename}/records/${created_record_id}`).expect(
-                200
-            );
+            const res = await auth_request('get', `/storage/${project_name}/${records_filename}/records/${created_record_id}`).expect(200);
             expect(res.body).toHaveProperty('record');
             expect(res.body.record.id).toBe(created_record_id);
         });
 
         it('should return 404 when record ID does not exist', async () => {
             const fake_id = 'non_existing_id';
-            const res = await auth_request('get', `/storage/${project_name}/${records_filename}/records/${fake_id}`).expect(
-                404
-            );
+            const res = await auth_request('get', `/storage/${project_name}/${records_filename}/records/${fake_id}`).expect(404);
             expect(res.body).toHaveProperty('error', 'Record not found');
         });
 
         it('should update (PUT) a record (merge)', async () => {
             const update = { age: 31 };
-            const res = await auth_request('put', `/storage/${project_name}/${records_filename}/records/${created_record_id}`, update).expect(
-                200
-            );
+            const res = await auth_request('put', `/storage/${project_name}/${records_filename}/records/${created_record_id}`, update).expect(200);
             expect(res.body).toHaveProperty('message', 'Record updated');
             expect(res.body.record).toMatchObject({ name: 'Alice', age: 31 });
         });
 
         it('should delete a record by ID (DELETE .../records/:id)', async () => {
-            const res = await auth_request('delete', `/storage/${project_name}/${records_filename}/records/${created_record_id}`).expect(
-                200
-            );
+            const res = await auth_request('delete', `/storage/${project_name}/${records_filename}/records/${created_record_id}`).expect(200);
             expect(res.body).toEqual({ message: 'Record deleted' });
         });
 
         it('should return 404 when deleting a non-existing record', async () => {
             const fake_id = 'non_existing_id';
-            const res = await auth_request('delete', `/storage/${project_name}/${records_filename}/records/${fake_id}`).expect(
-                404
-            );
+            const res = await auth_request('delete', `/storage/${project_name}/${records_filename}/records/${fake_id}`).expect(404);
             expect(res.body).toHaveProperty('error', 'Record not found');
         });
 
@@ -270,9 +276,7 @@ describe('Storage Microservice - Full API Tests with Authentication', () => {
 
             // Now add a record to that file (should convert it to an array)
             const new_record = { from: 'object' };
-            const res = await auth_request('post', `/storage/${project_name}/${obj_file}/records`, new_record).expect(
-                201
-            );
+            const res = await auth_request('post', `/storage/${project_name}/${obj_file}/records`, new_record).expect(201);
             expect(res.body).toHaveProperty('id');
 
             // Verify the file is now an array with two records
@@ -286,36 +290,16 @@ describe('Storage Microservice - Full API Tests with Authentication', () => {
 
     // ==================== PARAMETER VALIDATION TESTS ====================
     describe('Parameter validation', () => {
-        it('should return 400 when project name is invalid (empty string)', async () => {
-            const res = await auth_request('get', '/storage//list').expect(404);
-            // Note: Express returns 404 because the route doesn't match with empty parameter
-            // The validation is handled by router.param for non-empty projects
+        it('should return 404 when project name is empty (no route match)', async () => {
+            await auth_request('get', '/storage//list').expect(404);
         });
 
-        it('should return 400 when trying to create project with empty name', async () => {
-            const res = await auth_request('post', '/storage/project/').expect(404);
-            // Express can't route empty parameter
+        it('should return 404 when trying to create project with empty name', async () => {
+            await auth_request('post', '/storage/project/').expect(404);
         });
 
-        it('should return 400 when filename is empty string', async () => {
-            const res = await auth_request('get', `/storage/${project_name}/`).expect(404);
-            // With the new routing structure, this returns 404 as there's no match
-        });
-    });
-
-    // ==================== PARAMETER VALIDATION TESTS ====================
-    describe('Parameter validation', () => {
-        it('should return 400 when project name is invalid (empty string)', async () => {
-            const res = await auth_request('get', '/storage//list').expect(404);
-            // Note: Express returns 404 because the route doesn't match with empty parameter
-        });
-
-        it('should return 400 when trying to create project with empty name', async () => {
-            const res = await auth_request('post', '/storage/project/').expect(404);
-        });
-
-        it('should return 400 when filename is empty string', async () => {
-            const res = await auth_request('get', `/storage/${project_name}/`).expect(404);
+        it('should return 404 when filename is empty (trailing slash)', async () => {
+            await auth_request('get', `/storage/${project_name}/`).expect(404);
         });
     });
 });
