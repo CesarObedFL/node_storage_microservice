@@ -1,6 +1,6 @@
 import express from 'express';
 import AppError from '../utils/error_handler.js';
-import auth_middleware from '../auth/auth_middleware.js';
+import { auth_middleware } from '../auth/auth_middleware.js';
 
 import {
     create_project,
