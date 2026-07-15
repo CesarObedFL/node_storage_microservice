@@ -1,0 +1,11 @@
+2026-07-15T10:51:01: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T10:51:04: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T10:51:07: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T10:51:10: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T10:51:13: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T10:51:16: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T10:51:20: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T10:51:23: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T10:51:26: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T10:51:29: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T10:51:32: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
