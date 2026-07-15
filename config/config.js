@@ -12,8 +12,22 @@ export const port = process.env.PORT || 4000;
 export const storage_path = process.env.STORAGE_PATH || './storage';
 export const master_token = process.env.MASTER_TOKEN;
 
+
 // Ruta al archivo de tokens dinámicos
 const tokens_file_path = path.join(__dirname, 'tokens.json');
+
+
+/**
+ * Parse CORS origins from environment variable.
+ * Supports comma-separated list, with optional spaces.
+ *
+ * @returns {string[]} Array of allowed origins.
+ */
+export function get_cors_origins() {
+  const origins = process.env.CORS_ORIGINS || '';
+  if (!origins) return [];
+  return origins.split(',').map(o => o.trim()).filter(o => o.length > 0);
+}
 
 /**
  * Carga el mapa de tokens desde el archivo tokens.json y los tokens del .env.

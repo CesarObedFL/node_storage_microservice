@@ -4,6 +4,7 @@ import path from 'path';
 import { port } from './config/config.js';
 import storage_routes from './routes/routes_storage.js';
 import AppError from './utils/error_handler.js';
+import cors from 'cors';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -11,6 +12,24 @@ const __dirname = path.dirname(__filename);
 const app = express();
 
 app.set('port', port);
+
+// ==================== CORS CONFIGURATION ====================
+const allowed_origins = get_cors_origins();
+
+if (allowed_origins.length > 0) {
+    app.use(cors({
+        origin: allowed_origins,
+        methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+        allowedHeaders: ['Content-Type', 'Authorization'],
+        credentials: true,
+    }));
+} else {
+    // Si no hay orígenes configurados, permitir todos (solo en desarrollo)
+    console.warn('⚠️  No CORS origins configured. Allowing all origins (development mode).');
+    app.use(cors());
+}
+
+
 app.use(express.json({
     verify: (req, res, buf, encoding) => {
         try {
