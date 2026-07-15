@@ -1,8 +1,8 @@
 module.exports = {
   apps: [
     {
-      name: 'node_emailing_service',
-      script: './index.js',
+      name: 'node_storage_microservice',
+      script: './server.js',
       watch: true,
       env: {
         NODE_ENV: 'production',
