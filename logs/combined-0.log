@@ -4756,3 +4756,1485 @@
 2026-07-15T11:32:29:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
 2026-07-15T11:32:29:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
 2026-07-15T11:32:29:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:32:32: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:32:32: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:32:32:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:32:32:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:32:32:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:32:32:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:32:36: ◇ injected env (3) from config/.env // tip: ◈ secrets for agents [www.dotenvx.com]
+2026-07-15T11:32:36: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:32:36:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:32:36:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:32:36:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:32:36:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:32:39: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:32:39: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:32:39:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:32:39:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:32:39:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:32:39:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:32:42: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T11:32:42: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:32:42:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:32:42:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:32:42:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:32:42:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:32:45: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:32:45: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:32:45:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:32:45:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:32:45:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:32:45:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:32:48: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:32:48: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:32:48:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:32:48:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:32:48:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:32:48:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:32:51: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:32:51: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:32:51:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:32:51:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:32:51:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:32:51:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:32:54: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:32:54: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:32:54:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:32:54:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:32:54:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:32:54:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:32:57: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:32:57: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:32:57:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:32:57:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:32:57:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:32:57:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:33:01: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T11:33:01: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:33:01:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:33:01:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:33:01:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:33:01:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:33:04: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:33:04: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:33:04:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:33:04:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:33:04:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:33:04:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:33:07: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:33:07: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:33:07:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:33:07:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:33:07:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:33:07:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:33:10: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:33:10: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:33:10:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:33:10:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:33:10:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:33:10:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:33:13: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:33:13: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:33:13:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:33:13:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:33:13:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:33:13:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:33:16: ◇ injected env (3) from config/.env // tip: ◈ secrets for agents [www.dotenvx.com]
+2026-07-15T11:33:16: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:33:16:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:33:16:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:33:16:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:33:16:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:33:19: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:33:19: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:33:19:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:33:19:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:33:19:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:33:19:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:33:23: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:33:23: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:33:23:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:33:23:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:33:23:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:33:23:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:33:26: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:33:26: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:33:26:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:33:26:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:33:26:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:33:26:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:33:29: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:33:29: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:33:29:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:33:29:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:33:29:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:33:29:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:33:32: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:33:32: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:33:32:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:33:32:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:33:32:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:33:32:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:33:35: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:33:35: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:33:35:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:33:35:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:33:35:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:33:35:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:33:38: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T11:33:38: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:33:38:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:33:38:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:33:38:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:33:38:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:33:41: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:33:41: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:33:41:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:33:41:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:33:41:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:33:41:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:33:45: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:33:45: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:33:45:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:33:45:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:33:45:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:33:45:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:33:48: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:33:48: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:33:48:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:33:48:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:33:48:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:33:48:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:33:51: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:33:51: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:33:51:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:33:51:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:33:51:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:33:51:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:33:54: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:33:54: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:33:54:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:33:54:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:33:54:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:33:54:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:33:57: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:33:57: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:33:57:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:33:57:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:33:57:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:33:57:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:34:00: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:34:00: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:34:00:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:34:00:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:34:00:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:34:00:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:34:03: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:34:03: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:34:03:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:34:03:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:34:03:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:34:03:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:34:07: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:34:07: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:34:07:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:34:07:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:34:07:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:34:07:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:34:10: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:34:10: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:34:10:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:34:10:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:34:10:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:34:10:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:34:13: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:34:13: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:34:13:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:34:13:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:34:13:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:34:13:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:34:16: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:34:16: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:34:16:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:34:16:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:34:16:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:34:16:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:34:19: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:34:19: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:34:19:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:34:19:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:34:19:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:34:19:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:34:22: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:34:22: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:34:22:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:34:22:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:34:22:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:34:22:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:34:25: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:34:25: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:34:25:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:34:25:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:34:25:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:34:25:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:34:29: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:34:29: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:34:29:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:34:29:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:34:29:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:34:29:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:34:32: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:34:32: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:34:32:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:34:32:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:34:32:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:34:32:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:34:35: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:34:35: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:34:35:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:34:35:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:34:35:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:34:35:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:34:38: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:34:38: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:34:38:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:34:38:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:34:38:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:34:38:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:34:41: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:34:41: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:34:41:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:34:41:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:34:41:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:34:41:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:34:44: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:34:44: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:34:44:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:34:44:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:34:44:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:34:44:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:34:47: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:34:47: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:34:47:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:34:47:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:34:47:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:34:47:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:34:50: ◇ injected env (3) from config/.env // tip: ◈ secrets for agents [www.dotenvx.com]
+2026-07-15T11:34:50: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:34:50:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:34:50:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:34:50:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:34:50:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:34:54: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:34:54: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:34:54:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:34:54:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:34:54:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:34:54:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:34:57: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:34:57: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:34:57:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:34:57:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:34:57:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:34:57:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:35:00: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:35:00: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:35:00:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:35:00:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:35:00:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:35:00:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:35:03: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T11:35:03: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:35:03:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:35:03:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:35:03:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:35:03:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:35:06: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:35:06: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:35:06:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:35:06:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:35:06:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:35:06:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:35:09: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:35:09: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:35:09:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:35:09:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:35:09:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:35:09:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:35:12: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:35:12: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:35:12:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:35:12:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:35:12:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:35:12:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:35:16: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:35:16: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:35:16:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:35:16:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:35:16:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:35:16:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:35:19: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T11:35:19: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:35:19:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:35:19:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:35:19:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:35:19:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:35:22: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:35:22: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:35:22:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:35:22:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:35:22:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:35:22:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:35:25: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:35:25: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:35:25:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:35:25:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:35:25:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:35:25:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:35:28: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:35:28: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:35:28:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:35:28:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:35:28:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:35:28:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:35:31: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:35:31: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:35:31:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:35:31:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:35:31:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:35:31:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:35:34: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:35:34: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:35:34:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:35:34:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:35:34:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:35:34:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:35:37: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:35:37: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:35:37:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:35:37:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:35:37:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:35:37:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:35:41: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:35:41: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:35:41:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:35:41:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:35:41:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:35:41:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:35:44: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:35:44: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:35:44:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:35:44:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:35:44:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:35:44:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:35:47: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:35:47: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:35:47:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:35:47:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:35:47:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:35:47:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:35:50: ◇ injected env (3) from config/.env // tip: ◈ secrets for agents [www.dotenvx.com]
+2026-07-15T11:35:50: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:35:50:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:35:50:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:35:50:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:35:50:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:35:53: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T11:35:53: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:35:53:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:35:53:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:35:53:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:35:53:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:35:56: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:35:56: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:35:56:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:35:56:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:35:56:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:35:56:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:35:59: ◇ injected env (3) from config/.env // tip: ◈ secrets for agents [www.dotenvx.com]
+2026-07-15T11:35:59: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:35:59:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:35:59:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:35:59:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:35:59:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:36:03: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:36:03: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:36:03:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:36:03:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:36:03:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:36:03:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:36:06: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:36:06: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:36:06:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:36:06:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:36:06:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:36:06:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:36:09: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:36:09: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:36:09:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:36:09:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:36:09:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:36:09:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:36:12: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:36:12: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:36:12:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:36:12:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:36:12:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:36:12:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:36:15: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T11:36:15: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:36:15:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:36:15:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:36:15:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:36:15:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:36:18: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:36:18: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:36:18:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:36:18:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:36:18:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:36:18:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:36:21: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:36:21: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:36:21:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:36:21:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:36:21:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:36:21:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:36:24: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:36:24: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:36:24:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:36:24:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:36:24:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:36:24:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:36:28: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:36:28: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:36:28:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:36:28:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:36:28:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:36:28:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:36:31: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:36:31: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:36:31:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:36:31:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:36:31:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:36:31:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:36:34: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:36:34: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:36:34:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:36:34:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:36:34:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:36:34:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:36:37: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:36:37: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:36:37:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:36:37:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:36:37:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:36:37:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:36:40: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:36:40: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:36:40:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:36:40:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:36:40:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:36:40:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:36:43: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:36:43: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:36:43:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:36:43:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:36:43:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:36:43:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:36:46: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:36:46: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:36:46:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:36:46:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:36:46:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:36:46:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:36:49: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:36:49: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:36:49:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:36:49:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:36:49:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:36:49:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:36:53: ◇ injected env (3) from config/.env // tip: ◈ secrets for agents [www.dotenvx.com]
+2026-07-15T11:36:53: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:36:53:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:36:53:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:36:53:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:36:53:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:36:56: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:36:56: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:36:56:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:36:56:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:36:56:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:36:56:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:36:59: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:36:59: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:36:59:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:36:59:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:36:59:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:36:59:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:37:02: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:37:02: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:37:02:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:37:02:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:37:02:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:37:02:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:37:05: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:37:05: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:37:05:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:37:05:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:37:05:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:37:05:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:37:08: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:37:08: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:37:08:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:37:08:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:37:08:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:37:08:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:37:11: ◇ injected env (3) from config/.env // tip: ◈ secrets for agents [www.dotenvx.com]
+2026-07-15T11:37:11: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:37:11:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:37:11:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:37:11:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:37:11:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:37:15: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:37:15: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:37:15:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:37:15:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:37:15:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:37:15:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:37:18: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:37:18: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:37:18:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:37:18:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:37:18:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:37:18:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:37:21: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T11:37:21: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:37:21:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:37:21:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:37:21:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:37:21:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:37:24: ◇ injected env (3) from config/.env // tip: ◈ secrets for agents [www.dotenvx.com]
+2026-07-15T11:37:24: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:37:24:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:37:24:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:37:24:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:37:24:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:37:27: ◇ injected env (3) from config/.env // tip: ◈ secrets for agents [www.dotenvx.com]
+2026-07-15T11:37:27: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:37:27:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:37:27:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:37:27:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:37:27:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:37:30: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:37:30: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:37:30:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:37:30:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:37:30:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:37:30:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:37:33: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:37:33: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:37:33:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:37:33:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:37:33:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:37:33:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:37:36: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:37:36: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:37:36:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:37:36:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:37:36:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:37:36:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:37:40: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:37:40: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:37:40:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:37:40:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:37:40:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:37:40:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:37:43: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:37:43: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:37:43:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:37:43:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:37:43:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:37:43:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:37:46: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:37:46: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:37:46:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:37:46:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:37:46:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:37:46:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:37:49: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T11:37:49: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:37:49:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:37:49:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:37:49:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:37:49:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:37:52: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:37:52: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:37:52:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:37:52:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:37:52:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:37:52:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:37:55: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:37:55: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:37:55:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:37:55:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:37:55:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:37:55:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:37:58: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:37:58: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:37:58:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:37:58:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:37:58:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:37:58:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:38:02: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:38:02: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:38:02:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:38:02:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:38:02:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:38:02:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:38:05: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:38:05: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:38:05:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:38:05:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:38:05:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:38:05:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:38:08: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:38:08: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:38:08:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:38:08:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:38:08:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:38:08:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:38:11: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:38:11: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:38:11:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:38:11:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:38:11:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:38:11:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:38:14: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:38:14: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:38:14:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:38:14:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:38:14:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:38:14:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:38:17: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:38:17: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:38:17:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:38:17:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:38:17:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:38:17:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:38:20: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:38:20: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:38:20:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:38:20:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:38:20:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:38:20:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:38:23: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:38:23: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:38:23:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:38:23:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:38:23:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:38:23:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:38:27: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T11:38:27: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:38:27:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:38:27:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:38:27:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:38:27:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:38:30: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:38:30: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:38:30:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:38:30:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:38:30:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:38:30:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:38:33: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:38:33: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:38:33:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:38:33:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:38:33:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:38:33:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:38:36: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:38:36: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:38:36:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:38:36:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:38:36:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:38:36:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:38:39: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:38:39: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:38:39:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:38:39:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:38:39:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:38:39:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:38:42: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:38:42: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:38:42:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:38:42:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:38:42:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:38:42:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:38:45: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:38:45: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:38:45:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:38:45:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:38:45:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:38:45:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:38:48: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:38:48: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:38:48:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:38:48:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:38:48:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:38:48:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:38:52: ◇ injected env (3) from config/.env // tip: ◈ secrets for agents [www.dotenvx.com]
+2026-07-15T11:38:52: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:38:52:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:38:52:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:38:52:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:38:52:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:38:55: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:38:55: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:38:55:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:38:55:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:38:55:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:38:55:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:38:58: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:38:58: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:38:58:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:38:58:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:38:58:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:38:58:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:39:01: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T11:39:01: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:39:01:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:39:01:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:39:01:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:39:01:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:39:04: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T11:39:04: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:39:04:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:39:04:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:39:04:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:39:04:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:39:07: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:39:07: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:39:07:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:39:07:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:39:07:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:39:07:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:39:10: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:39:10: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:39:10:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:39:10:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:39:10:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:39:10:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:39:14: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:39:14: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:39:14:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:39:14:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:39:14:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:39:14:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:39:17: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:39:17: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:39:17:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:39:17:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:39:17:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:39:17:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:39:20: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:39:20: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:39:20:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:39:20:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:39:20:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:39:20:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:39:23: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:39:23: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:39:23:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:39:23:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:39:23:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:39:23:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:39:26: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:39:26: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:39:26:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:39:26:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:39:26:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:39:26:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:39:29: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:39:29: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:39:29:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:39:29:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:39:29:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:39:29:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:39:32: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:39:32: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:39:32:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:39:32:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:39:32:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:39:32:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:39:35: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:39:35: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:39:35:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:39:35:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:39:35:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:39:35:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:39:39: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T11:39:39: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:39:39:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:39:39:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:39:39:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:39:39:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:39:42: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:39:42: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:39:42:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:39:42:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:39:42:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:39:42:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:39:45: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T11:39:45: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:39:45:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:39:45:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:39:45:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:39:45:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:39:48: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:39:48: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:39:48:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:39:48:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:39:48:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:39:48:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:39:51: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:39:51: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:39:51:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:39:51:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:39:51:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:39:51:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:39:54: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:39:54: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:39:54:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:39:54:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:39:54:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:39:54:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:39:57: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:39:57: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:39:57:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:39:57:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:39:57:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:39:57:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:40:00: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T11:40:00: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:40:00:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:40:00:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:40:00:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:40:00:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:40:04: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:40:04: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:40:04:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:40:04:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:40:04:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:40:04:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:40:07: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:40:07: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:40:07:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:40:07:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:40:07:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:40:07:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:40:10: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:40:10: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:40:10:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:40:10:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:40:10:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:40:10:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:40:13: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:40:13: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:40:13:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:40:13:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:40:13:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:40:13:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:40:16: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:40:16: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:40:16:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:40:16:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:40:16:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:40:16:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:40:19: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:40:19: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:40:19:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:40:19:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:40:19:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:40:19:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:40:22: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:40:22: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:40:22:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:40:22:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:40:22:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:40:22:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:40:26: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:40:26: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:40:26:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:40:26:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:40:26:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:40:26:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:40:29: ◇ injected env (3) from config/.env // tip: ◈ secrets for agents [www.dotenvx.com]
+2026-07-15T11:40:29: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:40:29:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:40:29:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:40:29:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:40:29:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:40:32: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:40:32: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:40:32:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:40:32:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:40:32:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:40:32:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:40:35: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:40:35: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:40:35:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:40:35:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:40:35:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:40:35:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:40:38: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:40:38: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:40:38:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:40:38:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:40:38:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:40:38:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:40:41: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:40:41: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:40:41:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:40:41:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:40:41:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:40:41:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:40:44: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:40:44: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:40:44:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:40:44:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:40:44:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:40:44:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:40:47: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:40:47: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:40:47:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:40:47:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:40:47:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:40:47:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:40:51: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:40:51: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:40:51:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:40:51:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:40:51:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:40:51:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:40:54: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:40:54: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:40:54:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:40:54:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:40:54:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:40:54:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:40:57: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:40:57: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:40:57:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:40:57:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:40:57:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:40:57:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:41:00: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:41:00: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:41:00:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:41:00:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:41:00:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:41:00:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:41:03: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:41:03: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:41:03:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:41:03:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:41:03:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:41:03:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:41:06: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:41:06: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:41:06:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:41:06:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:41:06:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:41:06:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:41:09: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T11:41:09: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:41:09:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:41:09:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:41:09:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:41:09:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:41:12: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:41:12: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:41:12:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:41:12:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:41:12:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:41:12:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:41:16: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:41:16: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:41:16:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:41:16:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:41:16:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:41:16:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:41:19: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:41:19: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:41:19:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:41:19:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:41:19:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:41:19:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:41:22: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T11:41:22: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:41:22:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:41:22:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:41:22:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:41:22:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:41:25: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T11:41:25: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:41:25:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:41:25:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:41:25:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:41:25:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:41:28: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:41:28: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:41:28:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:41:28:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:41:28:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:41:28:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:41:31: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T11:41:31: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:41:31:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:41:31:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:41:31:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:41:31:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:41:34: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:41:34: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:41:34:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:41:34:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:41:34:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:41:34:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:41:38: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:41:38: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:41:38:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:41:38:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:41:38:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:41:38:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:41:41: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:41:41: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:41:41:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:41:41:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:41:41:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:41:41:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:41:44: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:41:44: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:41:44:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:41:44:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:41:44:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:41:44:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:41:47: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:41:47: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:41:47:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:41:47:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:41:47:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:41:47:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:41:50: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:41:50: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:41:50:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:41:50:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:41:50:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:41:50:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:41:53: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:41:53: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:41:53:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:41:53:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:41:53:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:41:53:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:41:56: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:41:56: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:41:56:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:41:56:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:41:56:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:41:56:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:42:00: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:42:00: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:42:00:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:42:00:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:42:00:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:42:00:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:42:03: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:42:03: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:42:03:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:42:03:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:42:03:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:42:03:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:42:06: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:42:06: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:42:06:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:42:06:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:42:06:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:42:06:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:42:09: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:42:09: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:42:09:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:42:09:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:42:09:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:42:09:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:42:12: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:42:12: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:42:12:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:42:12:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:42:12:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:42:12:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:42:15: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T11:42:15: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:42:15:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:42:15:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:42:15:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:42:15:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:42:18: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:42:18: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:42:18:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:42:18:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:42:18:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:42:18:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:42:22: ◇ injected env (3) from config/.env // tip: ◈ secrets for agents [www.dotenvx.com]
+2026-07-15T11:42:22: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:42:22:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:42:22:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:42:22:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:42:22:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:42:25: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:42:25: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:42:25:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:42:25:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:42:25:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:42:25:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:42:28: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:42:28: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:42:28:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:42:28:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:42:28:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:42:28:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:42:31: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:42:31: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:42:31:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:42:31:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:42:31:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:42:31:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:42:34: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:42:34: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:42:34:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:42:34:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:42:34:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:42:34:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:42:37: ◇ injected env (3) from config/.env // tip: ◈ secrets for agents [www.dotenvx.com]
+2026-07-15T11:42:37: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:42:37:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:42:37:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:42:37:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:42:37:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:42:41: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:42:41: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:42:41:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:42:41:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:42:41:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:42:41:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:42:44: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:42:44: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:42:44:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:42:44:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:42:44:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:42:44:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:42:47: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:42:47: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:42:47:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:42:47:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:42:47:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:42:47:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:42:50: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T11:42:50: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:42:50:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:42:50:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:42:50:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:42:50:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:42:53: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:42:53: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:42:53:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:42:53:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:42:53:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:42:53:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:42:56: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T11:42:56: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:42:56:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:42:56:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:42:56:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:42:56:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:42:59: ◇ injected env (3) from config/.env // tip: ◈ secrets for agents [www.dotenvx.com]
+2026-07-15T11:42:59: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:42:59:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:42:59:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:42:59:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:42:59:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:43:02: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:43:02: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:43:02:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:43:02:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:43:02:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:43:02:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:43:06: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:43:06: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:43:06:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:43:06:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:43:06:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:43:06:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:43:09: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:43:09: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:43:09:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:43:09:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:43:09:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:43:09:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:43:12: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T11:43:12: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:43:12:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:43:12:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:43:12:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:43:12:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:43:15: ◇ injected env (3) from config/.env // tip: ◈ secrets for agents [www.dotenvx.com]
+2026-07-15T11:43:15: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:43:15:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:43:15:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:43:15:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:43:15:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:43:18: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:43:18: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:43:18:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:43:18:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:43:18:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:43:18:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:43:21: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:43:21: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:43:21:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:43:21:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:43:21:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:43:21:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:43:25: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:43:25: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:43:25:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:43:25:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:43:25:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:43:25:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:43:28: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:43:28: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:43:28:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:43:28:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:43:28:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:43:28:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:43:31: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:43:31: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:43:31:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:43:31:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:43:31:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:43:31:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:43:34: ◇ injected env (3) from config/.env // tip: ◈ secrets for agents [www.dotenvx.com]
+2026-07-15T11:43:34: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:43:34:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:43:34:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:43:34:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:43:34:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:43:37: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:43:37: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:43:37:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:43:37:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:43:37:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:43:37:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:43:40: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:43:40: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:43:40:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:43:40:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:43:40:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:43:40:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:43:43: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:43:43: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:43:43:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:43:43:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:43:43:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:43:43:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:43:47: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:43:47: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:43:47:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:43:47:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:43:47:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:43:47:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:43:50: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:43:50: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:43:50:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:43:50:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:43:50:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:43:50:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:43:53: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:43:53: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:43:53:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:43:53:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:43:53:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:43:53:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:43:56: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:43:56: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:43:56:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:43:56:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:43:56:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:43:56:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:43:59: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:43:59: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:43:59:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:43:59:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:43:59:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:43:59:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:44:02: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:44:02: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:44:02:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:44:02:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:44:02:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:44:02:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:44:05: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:44:05: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:44:05:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:44:05:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:44:05:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:44:05:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:44:08: ◇ injected env (3) from config/.env // tip: ◈ secrets for agents [www.dotenvx.com]
+2026-07-15T11:44:08: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:44:08:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:44:08:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:44:08:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:44:08:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:44:12: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T11:44:12: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:44:12:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:44:12:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:44:12:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:44:12:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:44:15: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:44:15: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:44:15:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:44:15:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:44:15:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:44:15:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:44:18: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:44:18: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:44:18:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:44:18:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:44:18:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:44:18:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:44:21: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:44:21: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:44:21:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:44:21:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:44:21:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:44:21:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:44:24: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T11:44:24: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:44:24:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:44:24:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:44:24:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:44:24:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:44:27: ◇ injected env (3) from config/.env // tip: ◈ secrets for agents [www.dotenvx.com]
+2026-07-15T11:44:27: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:44:27:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:44:27:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:44:27:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:44:27:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:44:30: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:44:30: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:44:30:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:44:30:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:44:30:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:44:30:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:44:34: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T11:44:34: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:44:34:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:44:34:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:44:34:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:44:34:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:44:37: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:44:37: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:44:37:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:44:37:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:44:37:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:44:37:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:44:40: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:44:40: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:44:40:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:44:40:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:44:40:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:44:40:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:44:43: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T11:44:43: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:44:43:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:44:43:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:44:43:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:44:43:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:44:46: ◇ injected env (3) from config/.env // tip: ◈ secrets for agents [www.dotenvx.com]
+2026-07-15T11:44:46: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:44:46:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:44:46:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:44:46:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:44:46:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:44:49: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T11:44:49: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:44:49:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:44:49:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:44:49:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:44:49:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:44:53: ◇ injected env (3) from config/.env // tip: ◈ secrets for agents [www.dotenvx.com]
+2026-07-15T11:44:53: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:44:53:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:44:53:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:44:53:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:44:53:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:44:56: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:44:56: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:44:56:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:44:56:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:44:56:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:44:56:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:44:59: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:44:59: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:44:59:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:44:59:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:44:59:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:44:59:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:45:02: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:45:02: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:45:02:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:45:02:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:45:02:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:45:02:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:45:05: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T11:45:05: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:45:05:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:45:05:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:45:05:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:45:05:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:45:09: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:45:09: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:45:09:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:45:09:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:45:09:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:45:09:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:45:12: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:45:12: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:45:12:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:45:12:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:45:12:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:45:12:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:45:15: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T11:45:15: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:45:15:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:45:15:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:45:15:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:45:15:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:45:18: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T11:45:18: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:45:18:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:45:18:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:45:18:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:45:18:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:45:21: ◇ injected env (3) from config/.env // tip: ◈ secrets for agents [www.dotenvx.com]
+2026-07-15T11:45:21: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:45:21:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:45:21:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:45:21:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:45:21:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+2026-07-15T11:45:24: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T11:45:24: ReferenceError: get_cors_origins is not defined
+2026-07-15T11:45:24:     at file:///home/cesarobedfl/Documentos/desarrollos/node_storage_microservice/server.js:17:25
+2026-07-15T11:45:24:     at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+2026-07-15T11:45:24:     at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+2026-07-15T11:45:24:     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
