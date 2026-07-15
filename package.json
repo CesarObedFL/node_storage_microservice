@@ -15,7 +15,8 @@
     "pm2:reload": "pm2 reload storage-microservice",
     "pm2:delete": "pm2 delete storage-microservice",
     "pm2:logs": "pm2 logs storage-microservice",
-    "pm2:status": "pm2 status"
+    "pm2:status": "pm2 status",
+    "pm2:init": "pm2 init"
   },
   "keywords": [],
   "author": "CesarObedFL",
