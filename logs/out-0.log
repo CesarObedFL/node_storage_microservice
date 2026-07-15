@@ -9,3 +9,21 @@
 2026-07-15T10:51:26: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
 2026-07-15T10:51:29: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
 2026-07-15T10:51:32: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T10:51:35: ◇ injected env (3) from config/.env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+2026-07-15T10:51:39: ◇ injected env (3) from config/.env // tip: ◈ secrets for agents [www.dotenvx.com]
+2026-07-15T10:51:42: ◇ injected env (3) from config/.env // tip: ◈ secrets for agents [www.dotenvx.com]
+2026-07-15T10:51:45: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T10:51:48: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T10:51:51: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T10:51:54: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T10:51:57: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T10:52:01: ◇ injected env (3) from config/.env // tip: ⌁ auth for agents [www.vestauth.com]
+2026-07-15T10:52:04: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }
+2026-07-15T10:52:07: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T10:52:10: ◇ injected env (3) from config/.env // tip: ◈ encrypted .env [www.dotenvx.com]
+2026-07-15T10:52:13: ◇ injected env (3) from config/.env // tip: ⌘ suppress logs { quiet: true }
+2026-07-15T10:52:16: ◇ injected env (3) from config/.env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+2026-07-15T10:52:19: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T10:52:23: ◇ injected env (3) from config/.env // tip: ◈ secrets for agents [www.dotenvx.com]
+2026-07-15T10:52:26: ◇ injected env (3) from config/.env // tip: ⌘ override existing { override: true }
+2026-07-15T10:52:29: ◇ injected env (3) from config/.env // tip: ⌘ enable debugging { debug: true }

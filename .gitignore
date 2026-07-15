@@ -3,3 +3,4 @@
 /tests/test*
 /config/tokens.json
 /storage
+/logs
