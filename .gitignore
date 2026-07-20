@@ -1,6 +1,28 @@
-/node_modules
-.env
-/tests/test*
-/config/tokens.json
-/storage
-/logs
+# Dependencias
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+
+# Configuración local
+config/.env
+config/tokens.json
+
+# Directorio de almacenamiento
+storage/
+
+# Logs
+*.log
+logs/
+tests/test*.txt
+tests/test*.logs
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
