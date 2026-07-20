@@ -1,7 +1,7 @@
 import express from 'express';
 import { fileURLToPath } from 'url';
 import path from 'path';
-import { port } from './config/config.js';
+import { port, get_cors_origins } from './config/config.js';
 import storage_routes from './routes/routes_storage.js';
 import AppError from './utils/error_handler.js';
 import cors from 'cors';
