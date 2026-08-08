@@ -33,7 +33,7 @@ pnpm install   # or npm install
 Create a .env file in the config/ directory:
 
 ```
-PORT=4000
+PORT=3100
 STORAGE_PATH=./storage
 MASTER_TOKEN=your_master_token_here
 ```
