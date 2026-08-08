@@ -84,13 +84,10 @@ jobs:
             # 4. Install dependencies (if any changed)
             pnpm install --frozen-lockfile
 
-            # 5. Reload the application with PM2 (zero downtime)
-            pm2 reload ecosystem.config.cjs --env production
+            # 5. Reload the app into the PM2 processes
+            pm2 start server.js --name node_storage_microservice --env production
 
-            # 6. Reload the app into the PM2 processes
-            pm2 reload node_storage_microservice
-
-            # 7. Save PM2 process list (optional)
+            # 6. Save PM2 process list (optional)
             pm2 save
 
             echo "✅ Deployment completed successfully!"
