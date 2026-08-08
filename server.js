@@ -5,6 +5,7 @@ import { port, get_cors_origins } from './config/config.js';
 import storage_routes from './routes/routes_storage.js';
 import AppError from './utils/error_handler.js';
 import cors from 'cors';
+import rateLimit from 'express-rate-limit';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -29,6 +30,25 @@ if (allowed_origins.length > 0) {
     app.use(cors());
 }
 
+// ==================== RATE LIMITING ====================
+// Global limiter: 100 requests per 15 minutes per IP
+const globalLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100,
+  message: 'Too many requests from this IP, please try again later.',
+  standardHeaders: true,
+  legacyHeaders: false,
+});
+
+// Strict limiter for critical endpoints (token creation, write operations)
+const strictLimiter = rateLimit({
+  windowMs: 5 * 60 * 1000, // 5 minutes
+  max: 20,
+  message: 'Too many requests to this endpoint, please slow down.',
+});
+
+// Apply global limiter to all routes
+app.use(globalLimiter);
 
 app.use(express.json({
     verify: (req, res, buf, encoding) => {
