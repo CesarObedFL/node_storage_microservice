@@ -24,8 +24,14 @@ if (allowed_origins.length > 0) {
         allowedHeaders: ['Content-Type', 'Authorization'],
         credentials: true,
     }));
+} else if (process.env.NODE_ENV === 'production') {
+    // prod, if there isn't setting origins, block all
+    console.error('❌ CORS origins not set in production. Blocking all requests.');
+    app.use((req, res, next) => {
+        res.status(403).json({ error: 'CORS not configured' });
+    });
 } else {
-    // Si no hay orígenes configurados, permitir todos (solo en desarrollo)
+    // dev: allow all the origins
     console.warn('⚠️  No CORS origins configured. Allowing all origins (development mode).');
     app.use(cors());
 }
@@ -33,18 +39,18 @@ if (allowed_origins.length > 0) {
 // ==================== RATE LIMITING ====================
 // Global limiter: 100 requests per 15 minutes per IP
 const globalLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100,
-  message: 'Too many requests from this IP, please try again later.',
-  standardHeaders: true,
-  legacyHeaders: false,
+    windowMs: 15 * 60 * 1000, // 15 minutes
+    max: 100,
+    message: 'Too many requests from this IP, please try again later.',
+    standardHeaders: true,
+    legacyHeaders: false,
 });
 
 // Strict limiter for critical endpoints (token creation, write operations)
 const strictLimiter = rateLimit({
-  windowMs: 5 * 60 * 1000, // 5 minutes
-  max: 20,
-  message: 'Too many requests to this endpoint, please slow down.',
+    windowMs: 5 * 60 * 1000, // 5 minutes
+    max: 20,
+    message: 'Too many requests to this endpoint, please slow down.',
 });
 
 // Apply global limiter to all routes
