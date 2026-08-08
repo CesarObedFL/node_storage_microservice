@@ -2,7 +2,6 @@ import express from 'express';
 import AppError from '../utils/error_handler.js';
 import { master_auth_middleware } from '../auth/master_auth.js';
 import { auth_middleware } from '../auth/auth_middleware.js';
-import { admin_auth_middleware } from '../auth/admin_auth_middleware.js';
 
 // Importar controladores de storage
 import {
@@ -58,9 +57,6 @@ router.param('filename', (req, res, next, filename) => {
 });
 
 // ==================== ADMIN TOKEN MANAGEMENT ====================
-
-router.use('/admin/tokens', admin_auth_middleware);
-
 /**
  * Apply master authentication to all /admin/tokens routes.
  */
