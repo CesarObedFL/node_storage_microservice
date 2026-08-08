@@ -75,19 +75,22 @@ jobs:
             # 1. Go to the project directory
             cd /var/www/node_storage_microservice
 
-            # 2. Pull the latest changes
+            # 2.
+            git checkout -- config/tokens.json 2>/dev/null || true
+
+            # 3. Pull the latest changes
             git pull origin main
 
-            # 3. Install dependencies (if any changed)
+            # 4. Install dependencies (if any changed)
             pnpm install --frozen-lockfile
 
-            # 4. Reload the application with PM2 (zero downtime)
+            # 5. Reload the application with PM2 (zero downtime)
             pm2 reload ecosystem.config.cjs --env production
 
-            # 5. Reload the app into the PM2 processes
+            # 6. Reload the app into the PM2 processes
             pm2 reload node_storage_microservice
 
-            # 6. Save PM2 process list (optional)
+            # 7. Save PM2 process list (optional)
             pm2 save
 
             echo "✅ Deployment completed successfully!"
