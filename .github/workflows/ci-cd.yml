@@ -8,65 +8,37 @@ on:
     branches:
       - main
 
-jobs:
+env:
+  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
 
-  # ==============================================================
+jobs:
   # JOB: CI - test
-  # ==============================================================
-  # Runs the test suite using Vitest.
-  # This job is executed for both push and pull_request events.
-  # ==============================================================
   test:
     runs-on: ubuntu-latest
 
     steps:
-      # ----------------------------------------------------------
-      # Step: Checkout repository
-      # ----------------------------------------------------------
+
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # ----------------------------------------------------------
-      # Step: Setup Node.js
-      # ----------------------------------------------------------
-      # Uses Node.js 20 with pnpm caching for faster installs.
-      # ----------------------------------------------------------
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9 
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'pnpm'
 
-      # ----------------------------------------------------------
-      # Step: Install pnpm globally
-      # ----------------------------------------------------------
-      - name: Install pnpm
-        run: npm install -g pnpm
-
-      # ----------------------------------------------------------
-      # Step: Install dependencies
-      # ----------------------------------------------------------
-      # Uses --frozen-lockfile to ensure the lockfile is up to date.
-      # ----------------------------------------------------------
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      # ----------------------------------------------------------
-      # Step: Run tests
-      # ----------------------------------------------------------
-      # Executes the test script defined in package.json.
-      # ----------------------------------------------------------
       - name: Run tests
         run: pnpm test
 
-  # ==============================================================
   # JOB: CD - deploy
-  # ==============================================================
-  # Deploys the application to the production VPS using SSH.
-  # This job runs only if:
-  #   - The 'test' job succeeds.
-  #   - The event is a push to the 'main' branch.
-  # ==============================================================
   deploy:
     needs: test                     # Depends on test job
     runs-on: ubuntu-latest
