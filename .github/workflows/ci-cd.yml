@@ -37,18 +37,8 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Fix lockfile
-        run: |
-          if [ -f pnpm-lock.yaml ]; then
-            echo "📦 Checking lockfile validity..."
-            if ! pnpm install --frozen-lockfile --dry-run; then
-              echo "⚠️  Lockfile is broken. Regenerating..."
-              rm -f pnpm-lock.yaml
-            fi
-          fi
-
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --prefer-frozen-lockfile --ignore-workspace
 
       - name: Run tests
         run: pnpm test
