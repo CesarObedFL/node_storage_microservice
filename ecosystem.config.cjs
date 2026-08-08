@@ -15,7 +15,7 @@ module.exports = {
       },
       env_production: {
         NODE_ENV: 'production',
-        PORT: 4000,
+        PORT: 3100,
         STORAGE_PATH: './storage',
         MASTER_TOKEN: '%cho8AdminToken&31231mkfasdoiff%'
       },
