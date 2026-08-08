@@ -76,7 +76,7 @@ jobs:
             cd /var/www/node_storage_microservice
 
             # 2. Pull the latest changes
-            git pull -u origin main
+            git pull origin main
 
             # 3. Install dependencies (if any changed)
             pnpm install --frozen-lockfile
