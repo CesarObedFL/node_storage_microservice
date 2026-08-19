@@ -202,17 +202,26 @@ Linting (if configured) should follow standard ESLint rules.
 
 # Contributing
 Fork the repository.
-
 Create a feature branch.
-
 Write tests for new functionality.
-
 Ensure all tests pass (pnpm test).
-
 Submit a pull request.
 
 
-# Support
-For issues or questions, please open an issue on the repository.
+## ☕ Support the Project
+
+If you find this project useful, you can buy me a coffee to keep it going!
+
+[![Buy Me A Coffee](https://cdn.buymeacoffee.com/buttons/lato-orange.png)](https://buymeacoffee.com/cesarobedfl)
+
+<b>Follow me! </b> <br>
+<p align="left">
+    <a href="https://github.com/CesarObedFL">
+        <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+    </a>
+    <a href="https://www.linkedin.com/in/cesarobedfigueroaluna/">
+        <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+    </a>
+</p>
 
 Built with ❤️ using Node.js and Express.
