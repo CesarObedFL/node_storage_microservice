@@ -224,4 +224,7 @@ If you find this project useful, you can buy me a coffee to keep it going!
     </a>
 </p>
 
+## 📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
 Built with ❤️ using Node.js and Express.
