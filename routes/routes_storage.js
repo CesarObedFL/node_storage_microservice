@@ -1,6 +1,6 @@
 import express from 'express';
 import AppError from '../utils/error_handler.js';
-import { master_auth_middleware } from '../auth/master_auth.js';
+import { master_auth_middleware } from '../auth/master_auth_middleware.js';
 import { auth_middleware } from '../auth/auth_middleware.js';
 
 // Importar controladores de storage
@@ -89,7 +89,8 @@ router.get('/admin/projects', list_all_projects);
 /**
  * Apply authentication middleware to all routes below this point.
  */
-router.use(auth_middleware);
+//router.use('/storage/*', auth_middleware);
+router.use('/storage', master_auth_middleware);
 
 // ==================== PROJECT MANAGEMENT ====================
 /**

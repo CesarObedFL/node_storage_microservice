@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 
 dotenv.config({ path: path.join(__dirname, '.env') });
 
-export const port = process.env.PORT || 3100;
+export const port = process.env.PORT || 3200;
 export const storage_path = process.env.STORAGE_PATH || './storage';
 export const master_token = process.env.MASTER_TOKEN;
 
