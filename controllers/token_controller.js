@@ -1,5 +1,6 @@
 import { save_token, delete_token, load_token_map } from '../config/config.js';
 import AppError from '../utils/error_handler.js';
+import { write_log } from '../utils/logger.js';
 import crypto from 'crypto';
 
 /**
@@ -37,8 +38,10 @@ export async function create_token(req, res, next) {
         }
 
         await save_token(token, project_trimmed);
+        write_log(`Token created for project: ${project}`, 'info');
         res.status(201).json({ message: 'Token created', token, project: project_trimmed });
     } catch (error) {
+        write_log(`Error creating token: ${error.message}`, 'error');
         next(error);
     }
 }

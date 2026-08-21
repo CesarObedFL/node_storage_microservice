@@ -1,6 +1,7 @@
 import * as storageService from '../services/storage_service.js';
 import AppError from '../utils/error_handler.js';
 import { master_auth_middleware } from '../auth/master_auth.js';
+import { write_log } from '../utils/logger.js';
 import { create_token, list_tokens, revoke_token } from '../controllers/token_controller.js';
 
 /**
@@ -333,8 +334,10 @@ export async function add_record(req, res, next) {
         }
 
         const result = await storageService.add_record(project, filename, record_data);
+        write_log(`Record saved in ${project}/${file}`, 'info');
         res.status(201).json({ message: 'Record added', id: result.id, record: result.record });
     } catch (error) {
+        write_log(`Error saving record: ${error.message}`, 'error');
         next(error);
     }
 }

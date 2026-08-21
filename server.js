@@ -6,11 +6,24 @@ import storage_routes from './routes/routes_storage.js';
 import AppError from './utils/error_handler.js';
 import cors from 'cors';
 import rateLimit from 'express-rate-limit';
+import { write_log } from './utils/logger.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
+
+app.use((req, res, next) => {
+    const start = Date.now();
+    res.on('finish', () => {
+        const duration = Date.now() - start;
+        write_log(
+            `${req.method} ${req.originalUrl} - ${res.statusCode} - ${duration}ms - IP: ${req.ip}`,
+            res.statusCode >= 400 ? 'error' : 'info'
+        );
+    });
+    next();
+});
 
 app.set('port', port);
 
@@ -80,12 +93,14 @@ app.use((err, req, res, next) => {
     const status = err.statusCode || 500;
     const message = err.isOperational ? err.message : 'Internal server error';
     console.error(err);
+    write_log(`Unhandled error: ${err.message} - ${req.originalUrl}`, 'error');
     res.status(status).json({ error: message });
 });
 
 // Start server only if not in test mode
 if (process.env.NODE_ENV !== 'test') {
     app.listen(port, () => {
+        write_log(`Storage microservice running on port ${port}`, 'info');
         console.log(`✅ Server running on http://localhost:${port}`);
     });
 }

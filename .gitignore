@@ -15,6 +15,7 @@ storage/
 logs/
 tests/test*.txt
 tests/test*.logs
+logs.txt
 
 # IDE / editor
 .vscode/
