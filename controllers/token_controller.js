@@ -3,6 +3,8 @@ import AppError from '../utils/error_handler.js';
 import { write_log } from '../utils/logger.js';
 import crypto from 'crypto';
 
+const tokens = {};
+
 /**
  * Genera un token aleatorio.
  * @returns {string} Token de 32 caracteres hexadecimales.
@@ -31,7 +33,7 @@ export async function create_token(req, res, next) {
 
         // Generar token único
         let token = generate_token();
-        // Asegurar que no exista ya
+        tokens[token] = project;
         let token_map = await load_token_map();
         while (token_map.has(token)) {
             token = generate_token();
@@ -82,4 +84,13 @@ export async function revoke_token(req, res, next) {
     } catch (error) {
         next(error);
     }
+}
+
+/**
+ * Obtiene el proyecto asociado a un token.
+ * @param {string} token - El token a verificar.
+ * @returns {string|null} El nombre del proyecto o null si no existe.
+ */
+export function get_project_for_token(token) {
+    return tokens[token] || null;
 }
