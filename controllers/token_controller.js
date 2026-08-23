@@ -94,3 +94,9 @@ export async function revoke_token(req, res, next) {
 export function get_project_for_token(token) {
     return tokens[token] || null;
 }
+
+
+
+export function get_tokens() {
+    return tokens;
+}

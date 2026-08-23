@@ -24,8 +24,11 @@ describe('Admin Token Management', () => {
         return req;
     };
 
+    // ============================================================
+    // 1. PRUEBAS PARA POST /admin/tokens
+    // ============================================================
     describe('POST /admin/tokens', () => {
-        it('should create a new token (201)', async () => {
+        test('should create a new token (201)', async () => {
             const project = 'new_project';
             const res = await master_request('post', '/admin/tokens', { project }).expect(201);
             expect(res.body).toHaveProperty('message', 'Token created');
@@ -37,17 +40,17 @@ describe('Admin Token Management', () => {
             expect(token_map.get(res.body.token)).toBe(project);
         });
 
-        it('should return 400 if project name is missing', async () => {
+        test('should return 400 if project name is missing', async () => {
             const res = await master_request('post', '/admin/tokens', {}).expect(400);
             expect(res.body).toHaveProperty('error', 'Project name is required');
         });
 
-        it('should return 400 if project name has invalid characters', async () => {
+        test('should return 400 if project name has invalid characters', async () => {
             const res = await master_request('post', '/admin/tokens', { project: 'bad@project' }).expect(400);
             expect(res.body).toHaveProperty('error', 'Project name can only contain letters, numbers, and underscores');
         });
 
-        it('should return 401 if master token is invalid', async () => {
+        test('should return 401 if master token is invalid', async () => {
             await request(server)
                 .post('/admin/tokens')
                 .set('Authorization', `Bearer ${invalid_token}`)
@@ -56,14 +59,17 @@ describe('Admin Token Management', () => {
         });
     });
 
+    // ============================================================
+    // 2. PRUEBAS PARA GET /admin/tokens
+    // ============================================================
     describe('GET /admin/tokens', () => {
-        it('should list all tokens (200)', async () => {
+        test('should list all tokens (200)', async () => {
             const res = await master_request('get', '/admin/tokens').expect(200);
             expect(res.body).toHaveProperty('tokens');
             expect(typeof res.body.tokens).toBe('object');
         });
 
-        it('should return 401 if master token is invalid', async () => {
+        test('should return 401 if master token is invalid', async () => {
             await request(server)
                 .get('/admin/tokens')
                 .set('Authorization', `Bearer ${invalid_token}`)
@@ -71,6 +77,9 @@ describe('Admin Token Management', () => {
         });
     });
 
+    // ============================================================
+    // 3. PRUEBAS PARA DELETE /admin/tokens/:token
+    // ============================================================
     describe('DELETE /admin/tokens/:token', () => {
         let created_token;
 
@@ -84,10 +93,10 @@ describe('Admin Token Management', () => {
             // Limpiar token creado en caso de que la prueba falle
             try {
                 await delete_token(created_token);
-            } catch (_) { }
+            } catch (_) { /* ignore */ }
         });
 
-        it('should revoke a token (200)', async () => {
+        test('should revoke a token (200)', async () => {
             const res = await master_request('delete', `/admin/tokens/${created_token}`).expect(200);
             expect(res.body).toHaveProperty('message', 'Token revoked successfully');
 
@@ -96,12 +105,12 @@ describe('Admin Token Management', () => {
             expect(token_map.has(created_token)).toBe(false);
         });
 
-        it('should return 404 if token does not exist', async () => {
+        test('should return 404 if token does not exist', async () => {
             const res = await master_request('delete', '/admin/tokens/non_existing_token').expect(404);
             expect(res.body).toHaveProperty('error', 'Token not found');
         });
 
-        it('should return 401 if master token is invalid', async () => {
+        test('should return 401 if master token is invalid', async () => {
             await request(server)
                 .delete(`/admin/tokens/${created_token}`)
                 .set('Authorization', `Bearer ${invalid_token}`)
