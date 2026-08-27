@@ -90,10 +90,23 @@ app.use('/', storage_routes);
 
 // Global error handler
 app.use((err, req, res, next) => {
+    // Asegurar que err sea un objeto Error válido
+    if (!err) {
+        err = new Error('Unknown error');
+        err.statusCode = 500;
+        err.isOperational = true;
+    }
+
     const status = err.statusCode || 500;
     const message = err.isOperational ? err.message : 'Internal server error';
-    console.error(err);
-    write_log(`Unhandled error: ${err.message} - ${req.originalUrl}`, 'error');
+
+    // Log del error (evitar leer stack si no existe)
+    console.error({
+        message: err.message || 'No error message',
+        stack: err.stack || 'No stack trace',
+        status,
+    });
+
     res.status(status).json({ error: message });
 });
 
