@@ -2,7 +2,6 @@ import express from 'express';
 import AppError from '../utils/error_handler.js';
 import { master_auth_middleware } from '../auth/master_auth_middleware.js';
 import { project_auth_middleware } from '../auth/project_auth_middleware.js';
-import { auth_middleware } from '../auth/auth_middleware.js';
 
 // Importar controladores de storage
 import {
@@ -61,30 +60,30 @@ router.param('filename', (req, res, next, filename) => {
 /**
  * Apply master authentication to all /admin/tokens routes.
  */
-router.use('/admin/tokens', master_auth_middleware);
+router.use('/storage/admin/tokens', master_auth_middleware);
 
 /**
  * POST /admin/tokens
  * Generates a new token for a project.
  */
-router.post('/admin/tokens', create_token);
+router.post('/storage/admin/tokens', create_token);
 
 /**
  * GET /admin/tokens
  * Lists all dynamic tokens.
  */
-router.get('/admin/tokens', list_tokens);
+router.get('/storage/admin/tokens', list_tokens);
 
 /**
  * DELETE /admin/tokens/:token
  * Revokes a token.
  */
-router.delete('/admin/tokens/:token', revoke_token);
+router.delete('/storage/admin/tokens/:token', revoke_token);
 
 
 
 // ==================== ADMIN ROUTES ====================
-router.get('/admin/projects', list_all_projects);
+router.get('/storage/admin/projects', list_all_projects);
 
 // ==================== PROTECTED ROUTES (authentication required) ====================
 /**
@@ -173,7 +172,7 @@ router.delete('/storage/:project/:filename/records/:record_id', delete_record);
  * GET /test
  * Simple health check for the router. Public.
  */
-router.get('/test', (req, res) => {
+router.get('/storage/test', (req, res) => {
     res.json({ message: 'Router working' });
 });
 
