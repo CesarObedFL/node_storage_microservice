@@ -32,7 +32,16 @@ const allowed_origins = get_cors_origins();
 
 if (allowed_origins.length > 0) {
     app.use(cors({
-        origin: allowed_origins,
+        origin: function (origin, callback) {
+            if (!origin) {
+                return callback(null, true);
+            }
+            if (allowedOrigins.includes(origin)) {
+                callback(null, true);
+            } else {
+                callback(new Error('Not allowed by CORS'));
+            }
+        },
         methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
         allowedHeaders: ['Content-Type', 'Authorization'],
         credentials: true,
