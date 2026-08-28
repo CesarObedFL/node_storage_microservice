@@ -13,7 +13,7 @@ env:
 
 jobs:
   # JOB: CI - test
-  test: true
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -80,6 +80,8 @@ jobs:
 
             # 3. Pull the latest changes
             git pull origin main
+
+            CI=true pnpm install --frozen-lockfile
 
             # 4. Install dependencies (if any changed)
             pnpm install --frozen-lockfile
