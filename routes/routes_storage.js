@@ -176,4 +176,9 @@ router.get('/storage/test', (req, res) => {
     res.json({ message: 'Router working' });
 });
 
+// Health check
+router.get('/storage/health', (req, res) => {
+    res.json({ status: 'ok', server: 'storage', timestamp: new Date().toISOString() });
+});
+
 export default router;

@@ -89,11 +89,6 @@ app.use(express.json({
     }
 }));
 
-// Health check
-app.get('/health', (req, res) => {
-    res.json({ status: 'ok', timestamp: new Date().toISOString() });
-});
-
 // Mount routes
 app.use('/', storage_routes);
 
@@ -122,7 +117,6 @@ app.use((err, req, res, next) => {
 // Start server only if not in test mode
 if (process.env.NODE_ENV !== 'test') {
     app.listen(port, () => {
-        write_log(`Storage microservice running on port ${port}`, 'info');
         console.log(`✅ Server running on http://localhost:${port}`);
     });
 }
