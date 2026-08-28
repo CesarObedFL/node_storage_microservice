@@ -13,7 +13,7 @@ env:
 
 jobs:
   # JOB: CI - test
-  test:
+  test: true
     runs-on: ubuntu-latest
 
     steps:
