@@ -1,0 +1,10 @@
+node_modules
+storage
+logs
+.git
+.gitignore
+*.log
+.env
+.DS_Store
+tests
+README.md
