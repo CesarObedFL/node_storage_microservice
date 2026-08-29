@@ -1,0 +1,22 @@
+services:
+  storage:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    container_name: node_storage_microservice
+    restart: always
+    ports:
+      - "3200:3200"
+    environment:
+      - NODE_ENV=production
+      - PORT=3200
+      - STORAGE_PATH=/app/storage
+      - MASTER_TOKEN=${MASTER_TOKEN}
+      - CORS_ORIGINS=${CORS_ORIGINS}
+    volumes:
+      - ./storage:/app/storage
+      - ./config/tokens.json:/app/config/tokens.json
+      - ./logs:/app/logs
+    env_file:
+      - ./config/.env
