@@ -1,6 +1,6 @@
 import request from 'supertest';
-import app from '../../server.js';
-import { master_token } from '../../config/config.js';
+import app from '../server.js';
+import { master_token } from '../config/config.js';
 
 export const MASTER_TOKEN = master_token || 'cho8AdminToken&31231mkfasdoiff';
 

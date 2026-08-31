@@ -5,8 +5,5 @@ export default defineConfig({
         globals: true,
         environment: 'node',
         include: ['tests/**/*.test.js'],
-        env: {
-            CORS_ORIGINS: 'https://cesarobedfl.pro,https://solucionesyoas.com.mx',
-        },
     },
 });
