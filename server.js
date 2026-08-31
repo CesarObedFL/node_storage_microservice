@@ -36,11 +36,13 @@ if (allowed_origins.length > 0) {
             if (!origin) {
                 return callback(null, true);
             }
-            if (allowedOrigins.includes(origin)) {
-                callback(null, true);
-            } else {
-                callback(new Error('Not allowed by CORS'));
+            if (allowed_origins.includes(origin)) {
+                return callback(null, true);
             }
+            const err = new Error('Not allowed by CORS');
+            err.statusCode = 403;
+            err.isOperational = true; // ← crucial
+            callback(err);
         },
         methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
         allowedHeaders: ['Content-Type', 'Authorization'],
@@ -52,10 +54,6 @@ if (allowed_origins.length > 0) {
     app.use((req, res, next) => {
         res.status(403).json({ error: 'CORS not configured' });
     });
-} else {
-    // dev: allow all the origins
-    console.warn('⚠️  No CORS origins configured. Allowing all origins (development mode).');
-    app.use(cors());
 }
 
 // ==================== RATE LIMITING ====================
@@ -94,19 +92,11 @@ app.use('/', storage_routes);
 
 // Global error handler
 app.use((err, req, res, next) => {
-    // Asegurar que err sea un objeto Error válido
-    if (!err) {
-        err = new Error('Unknown error');
-        err.statusCode = 500;
-        err.isOperational = true;
-    }
-
     const status = err.statusCode || 500;
     const message = err.isOperational ? err.message : 'Internal server error';
 
-    // Log del error (evitar leer stack si no existe)
     console.error({
-        message: err.message || 'No error message',
+        message: err.message || 'Unknown error',
         stack: err.stack || 'No stack trace',
         status,
     });

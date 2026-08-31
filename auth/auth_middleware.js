@@ -1,31 +1,27 @@
 import { load_token_map } from '../config/config.js';
 import AppError from '../utils/error_handler.js';
 
-/**
- * Authentication middleware.
- * Reads Bearer token from Authorization header, validates it,
- * and attaches the associated project name to `req.project`.
- */
 export async function auth_middleware(req, res, next) {
-    console.log('🔍 Auth middleware called');
-    console.log('master_token:', master_token);
     const auth_header = req.headers.authorization;
-    console.log('Authorization header:', auth_header);
     if (!auth_header || !auth_header.startsWith('Bearer ')) {
-        return next(new AppError('Missing or invalid Authorization header (Bearer token required)', 401));
+        return next(new AppError('Missing or invalid Authorization header', 401));
     }
 
     const token = auth_header.split(' ')[1];
-    if (!token) {
-        return next(new AppError('Token not provided', 401));
-    }
-
     const token_map = await load_token_map();
-    const project = token_map.get(token);
-    if (!project) {
+    const project_from_token = token_map.get(token);
+    if (!project_from_token) {
         return next(new AppError('Invalid or expired token', 401));
     }
 
-    req.project = project;
+    // Solo verificar el proyecto si existe en la URL
+    if (req.params && req.params.project) {
+        const requested_project = req.params.project;
+        if (project_from_token !== requested_project) {
+            return next(new AppError('Token does not grant access to this project', 403));
+        }
+    }
+
+    req.project = project_from_token;
     next();
 }

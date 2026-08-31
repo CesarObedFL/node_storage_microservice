@@ -1,7 +1,10 @@
-import request from 'supertest';
-import { describe, beforeAll, afterAll, test, expect } from 'vitest';
-import app from '../server.js';
+import fs from 'fs/promises';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import { master_token } from '../config/config.js';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const TOKENS_FILE = path.join(__dirname, '../config/tokens.json');
 
 // ======================================================
 // 1. CONFIGURACIÓN Y HELPERS
@@ -17,11 +20,15 @@ let project_token;
 /**
  * Crea un token para el proyecto de prueba usando el token maestro.
  */
+// Helper para crear token de proyecto usando master token
 async function create_project_token(project) {
     const res = await request(app)
-        .post('/admin/tokens')
-        .set('Authorization', `Bearer ${MASTER_TOKEN}`)
+        .post('/storage/admin/tokens')
+        .set('Authorization', `Bearer ${master_token}`)
         .send({ project });
+    if (res.status !== 201) {
+        throw new Error(`Failed to create token: ${res.body.error || res.status}`);
+    }
     return res.body.token;
 }
 
@@ -49,6 +56,7 @@ async function clean_test_project() {
 describe('Storage CRUD operations', () => {
     // Antes de todas las pruebas, crear el token de proyecto.
     beforeAll(async () => {
+        await fs.writeFile(TOKENS_FILE, '{}', 'utf8');
         project_token = await create_project_token(TEST_PROJECT);
         expect(project_token).toBeDefined();
     });
@@ -216,7 +224,7 @@ describe('Storage CRUD operations', () => {
     describe('Admin routes with project token', () => {
         test('debe rechazar acceso a /admin/tokens con token de proyecto', async () => {
             const res = await request(app)
-                .get('/admin/tokens')
+                .get('/storage/admin/tokens')
                 .set('Authorization', `Bearer ${project_token}`);
 
             expect(res.status).toBe(401);
@@ -225,7 +233,7 @@ describe('Storage CRUD operations', () => {
 
         test('debe rechazar creación de token con token de proyecto', async () => {
             const res = await request(app)
-                .post('/admin/tokens')
+                .post('/storage/admin/tokens')
                 .set('Authorization', `Bearer ${project_token}`)
                 .send({ project: 'hack_project' });
 

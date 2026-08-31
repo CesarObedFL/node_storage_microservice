@@ -24,9 +24,9 @@ const tokens_file_path = path.join(__dirname, 'tokens.json');
  * @returns {string[]} Array of allowed origins.
  */
 export function get_cors_origins() {
-  const origins = process.env.CORS_ORIGINS || '';
-  if (!origins) return [];
-  return origins.split(',').map(o => o.trim()).filter(o => o.length > 0);
+    const origins = process.env.CORS_ORIGINS || '';
+    if (!origins) return [];
+    return origins.split(',').map(o => o.trim()).filter(o => o.length > 0);
 }
 
 /**
@@ -37,15 +37,25 @@ export async function load_token_map() {
     let dynamic_tokens = {};
     try {
         const data = await fs.readFile(tokens_file_path, 'utf8');
-        dynamic_tokens = JSON.parse(data);
+        if (data.trim() === '') {
+            // Si está vacío, considerar como objeto vacío
+            dynamic_tokens = {};
+        } else {
+            dynamic_tokens = JSON.parse(data);
+        }
     } catch (error) {
-        if (error.code !== 'ENOENT') {
+        if (error.code === 'ENOENT') {
+            // El archivo no existe, usamos objeto vacío
+        } else if (error instanceof SyntaxError) {
+            console.warn('⚠️ tokens.json corrupto, reiniciando...');
+            // Sobrescribir con objeto vacío
+            await fs.writeFile(tokens_file_path, '{}', 'utf8');
+            dynamic_tokens = {};
+        } else {
             console.error('Error reading tokens file:', error);
         }
-        // Si el archivo no existe, comenzamos con vacío
     }
 
-    // Construir mapa combinando .env y archivo
     const map = new Map();
     // Primero los del .env (PROJECT_TOKEN_*)
     for (const [key, value] of Object.entries(process.env)) {

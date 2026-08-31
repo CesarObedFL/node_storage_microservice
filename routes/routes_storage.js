@@ -2,6 +2,7 @@ import express from 'express';
 import AppError from '../utils/error_handler.js';
 import { master_auth_middleware } from '../auth/master_auth_middleware.js';
 import { project_auth_middleware } from '../auth/project_auth_middleware.js';
+import { auth_middleware } from '../auth/auth_middleware.js';
 
 // Importar controladores de storage
 import {
@@ -86,6 +87,9 @@ router.delete('/storage/admin/tokens/:token', revoke_token);
 router.get('/storage/admin/projects', list_all_projects);
 
 // ==================== PROTECTED ROUTES (authentication required) ====================
+
+router.use('/storage', auth_middleware);
+
 /**
  * Apply authentication middleware to all routes below this point.
  */
@@ -172,7 +176,7 @@ router.delete('/storage/:project/:filename/records/:record_id', delete_record);
  * GET /test
  * Simple health check for the router. Public.
  */
-router.get('/storage/test', (req, res) => {
+router.get('/test', (req, res) => {
     res.json({ message: 'Router working' });
 });
 

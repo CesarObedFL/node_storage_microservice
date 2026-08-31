@@ -1,120 +1,111 @@
-import request from 'supertest';
-import app from '../server.js';
-import { master_token, load_token_map, delete_token } from '../config/config.js';
+import fs from 'fs/promises';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const TOKENS_FILE = path.join(__dirname, '../config/tokens.json');
 
 describe('Admin Token Management', () => {
     let server;
+    const MASTER_TOKEN = master_token;
+    const INVALID_TOKEN = 'invalid_token';
 
-    beforeAll(() => {
+    beforeAll(async () => {
+        await fs.writeFile(TOKENS_FILE, '{}', 'utf8');
         server = app.listen(0);
     });
 
     afterAll(async () => {
-        await new Promise((resolve) => server.close(resolve));
+        if (server && server.close) {
+            await new Promise((resolve) => server.close(resolve));
+        }
     });
 
-    const valid_master_token = master_token;
-    const invalid_token = 'invalid_token';
-
-    // Helper para peticiones autenticadas con master token
     const master_request = (method, url, data = null) => {
         let req = request(server)[method](url);
-        req.set('Authorization', `Bearer ${valid_master_token}`);
+        req.set('Authorization', `Bearer ${MASTER_TOKEN}`);
         if (data) req.send(data);
         return req;
     };
 
-    // ============================================================
-    // 1. PRUEBAS PARA POST /admin/tokens
-    // ============================================================
-    describe('POST /admin/tokens', () => {
-        test('should create a new token (201)', async () => {
+    describe('POST /storage/admin/tokens', () => {
+        it('should create a new token (201)', async () => {
             const project = 'new_project';
-            const res = await master_request('post', '/admin/tokens', { project }).expect(201);
+            const res = await master_request('post', '/storage/admin/tokens', { project }).expect(201);
             expect(res.body).toHaveProperty('message', 'Token created');
             expect(res.body).toHaveProperty('token');
             expect(res.body.project).toBe(project);
-
             // Verificar que el token se haya guardado
             const token_map = await load_token_map();
             expect(token_map.get(res.body.token)).toBe(project);
         });
 
-        test('should return 400 if project name is missing', async () => {
-            const res = await master_request('post', '/admin/tokens', {}).expect(400);
+        it('should return 400 if project name is missing', async () => {
+            const res = await master_request('post', '/storage/admin/tokens', {}).expect(400);
             expect(res.body).toHaveProperty('error', 'Project name is required');
         });
 
-        test('should return 400 if project name has invalid characters', async () => {
-            const res = await master_request('post', '/admin/tokens', { project: 'bad@project' }).expect(400);
+        it('should return 400 if project name has invalid characters', async () => {
+            const res = await master_request('post', '/storage/admin/tokens', { project: 'bad@project' }).expect(400);
             expect(res.body).toHaveProperty('error', 'Project name can only contain letters, numbers, and underscores');
         });
 
-        test('should return 401 if master token is invalid', async () => {
+        it('should return 401 if master token is invalid', async () => {
             await request(server)
-                .post('/admin/tokens')
-                .set('Authorization', `Bearer ${invalid_token}`)
+                .post('/storage/admin/tokens')
+                .set('Authorization', `Bearer ${INVALID_TOKEN}`)
                 .send({ project: 'test' })
                 .expect(401);
         });
     });
 
-    // ============================================================
-    // 2. PRUEBAS PARA GET /admin/tokens
-    // ============================================================
-    describe('GET /admin/tokens', () => {
-        test('should list all tokens (200)', async () => {
-            const res = await master_request('get', '/admin/tokens').expect(200);
+    describe('GET /storage/admin/tokens', () => {
+        it('should list all tokens (200)', async () => {
+            const res = await master_request('get', '/storage/admin/tokens').expect(200);
             expect(res.body).toHaveProperty('tokens');
             expect(typeof res.body.tokens).toBe('object');
         });
 
-        test('should return 401 if master token is invalid', async () => {
+        it('should return 401 if master token is invalid', async () => {
             await request(server)
-                .get('/admin/tokens')
-                .set('Authorization', `Bearer ${invalid_token}`)
+                .get('/storage/admin/tokens')
+                .set('Authorization', `Bearer ${INVALID_TOKEN}`)
                 .expect(401);
         });
     });
 
-    // ============================================================
-    // 3. PRUEBAS PARA DELETE /admin/tokens/:token
-    // ============================================================
-    describe('DELETE /admin/tokens/:token', () => {
+    describe('DELETE /storage/admin/tokens/:token', () => {
         let created_token;
 
         beforeEach(async () => {
-            // Crear un token para pruebas
-            const res = await master_request('post', '/admin/tokens', { project: 'temp_project' }).expect(201);
+            const res = await master_request('post', '/storage/admin/tokens', { project: 'temp_project' }).expect(201);
             created_token = res.body.token;
         });
 
         afterEach(async () => {
-            // Limpiar token creado en caso de que la prueba falle
             try {
                 await delete_token(created_token);
-            } catch (_) { /* ignore */ }
+            } catch (_) { }
         });
 
-        test('should revoke a token (200)', async () => {
-            const res = await master_request('delete', `/admin/tokens/${created_token}`).expect(200);
+        it('should revoke a token (200)', async () => {
+            const res = await master_request('delete', `/storage/admin/tokens/${created_token}`).expect(200);
             expect(res.body).toHaveProperty('message', 'Token revoked successfully');
-
-            // Verificar que ya no existe
             const token_map = await load_token_map();
             expect(token_map.has(created_token)).toBe(false);
         });
 
-        test('should return 404 if token does not exist', async () => {
-            const res = await master_request('delete', '/admin/tokens/non_existing_token').expect(404);
+        it('should return 404 if token does not exist', async () => {
+            const res = await master_request('delete', '/storage/admin/tokens/non_existing_token').expect(404);
             expect(res.body).toHaveProperty('error', 'Token not found');
         });
 
-        test('should return 401 if master token is invalid', async () => {
+        it('should return 401 if master token is invalid', async () => {
             await request(server)
-                .delete(`/admin/tokens/${created_token}`)
-                .set('Authorization', `Bearer ${invalid_token}`)
+                .delete(`/storage/admin/tokens/${created_token}`)
+                .set('Authorization', `Bearer ${INVALID_TOKEN}`)
                 .expect(401);
         });
     });
-});
+}); 
