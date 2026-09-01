@@ -2,7 +2,7 @@ import express from 'express';
 import { fileURLToPath } from 'url';
 import path from 'path';
 import { port, get_cors_origins } from './config/config.js';
-import storage_routes from './routes/routes_storage.js';
+import routes from './routes/index.js';
 import AppError from './utils/error_handler.js';
 import cors from 'cors';
 import rateLimit from 'express-rate-limit';
@@ -88,7 +88,7 @@ app.use(express.json({
 }));
 
 // Mount routes
-app.use('/', storage_routes);
+app.use('/', routes);
 
 // Global error handler
 app.use((err, req, res, next) => {
