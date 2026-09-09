@@ -11,8 +11,8 @@
 
 import express from 'express';
 import AppError from '../utils/error_handler.js';
-import { project_auth_middleware } from '../auth/project_auth.js';
-import { master_auth_middleware } from '../auth/master_auth.js';
+import { project_auth_middleware } from '../auth/project_auth_middleware.js';
+import { master_auth_middleware } from '../auth/master_auth_middleware.js';
 
 // ---------- Controllers ----------
 // Projects
