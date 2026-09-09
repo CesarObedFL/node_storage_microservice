@@ -1,37 +1,32 @@
+// ================================================================
+// tests/auth.test.js
+// Authentication tests (project tokens and master tokens)
+// ================================================================
+// Covers:
+//   - Project token authentication (correct project, wrong project,
+//     invalid token, missing token)
+//   - Admin routes with master token (list tokens, create token,
+//     reject project token)
+//
+// @see ../auth/project_auth.js
+// @see ../auth/master_auth.js
+// ================================================================
+
 import request from 'supertest';
 import { describe, it, expect, beforeAll, afterAll } from 'vitest';
 import app from '../server.js';
 import { master_token } from '../config/config.js';
-import fs from 'fs/promises';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const TOKENS_FILE = path.join(__dirname, '../config/tokens.json');
+import { clear_tokens_file, create_project_token } from './helpers.js';
 
 describe('Authentication tests', () => {
     let server;
     let project_token;
     const TEST_PROJECT = 'test_project';
 
-    // Helper para crear token de proyecto usando master token
-    async function create_project_token(project) {
-        const res = await request(server)
-            .post('/storage/admin/tokens')
-            .set('Authorization', `Bearer ${master_token}`)
-            .send({ project });
-        if (res.status !== 201) {
-            throw new Error(`Failed to create token: ${res.body.error || res.status}`);
-        }
-        return res.body.token;
-    }
-
     beforeAll(async () => {
-        // Asegurar que tokens.json sea válido
-        await fs.writeFile(TOKENS_FILE, '{}', 'utf8');
+        await clear_tokens_file();
         server = app.listen(0);
-        project_token = await create_project_token(TEST_PROJECT);
+        project_token = await create_project_token(TEST_PROJECT, server);
     });
 
     afterAll(async () => {
@@ -40,6 +35,9 @@ describe('Authentication tests', () => {
         }
     });
 
+    // ============================================================
+    // Project token authentication
+    // ============================================================
     describe('Project token authentication', () => {
         it('should allow access to the correct project', async () => {
             const res = await request(server)
@@ -77,6 +75,9 @@ describe('Authentication tests', () => {
         });
     });
 
+    // ============================================================
+    // Admin routes with master token
+    // ============================================================
     describe('Admin routes with master token', () => {
         it('should list tokens with master token', async () => {
             const res = await request(server)
