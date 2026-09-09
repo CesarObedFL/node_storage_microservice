@@ -11,7 +11,7 @@
 
 import express from 'express';
 import AppError from '../utils/error_handler.js';
-import { project_auth_middleware } from '../auth/project_auth_middleware.js';
+import { project_auth_middleware } from '../auth/project_auth.js';
 import { master_auth_middleware } from '../auth/master_auth_middleware.js';
 
 // ---------- Controllers ----------
@@ -187,14 +187,14 @@ router.use('/storage', project_auth_middleware);
  * POST /storage/project/:project_name
  * Creates a new project folder.
  *
- * @route {POST} /storage/project/:project_name
- * @param {string} project_name - Name of the project.
+ * @route {POST} /storage/project/:project
+ * @param {string} project - Name of the project.
  * @header {string} Authorization - Bearer project token.
  * @response {object} 201 - { message: "Project created", project: string }
  * @response {object} 200 - { message: "Project already exists", project: string }
  * @response {object} 400 - { error: "Missing or invalid project name" }
  */
-router.post('/storage/project/:project_name', create_project);
+router.post('/storage/project/:project', create_project);
 
 /**
  * DELETE /storage/:project
@@ -348,4 +348,4 @@ router.put('/storage/:project/:filename/records/:record_id', update_record);
  */
 router.delete('/storage/:project/:filename/records/:record_id', delete_record);
 
-export default router;
+export default router;  

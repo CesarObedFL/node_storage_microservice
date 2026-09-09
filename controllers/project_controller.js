@@ -11,7 +11,8 @@
 // ================================================================
 
 import * as storageService from '../services/storage_service.js';
-import { validate_project } from '../utils/validation.js';
+import { validate_project, check_project_access } from '../utils/validation.js';
+import AppError from '../utils/error_handler.js';
 
 /**
  * POST /storage/project/:project_name
@@ -28,7 +29,8 @@ import { validate_project } from '../utils/validation.js';
  */
 export async function create_project(req, res, next) {
     try {
-        const project = validate_project(req.params.project_name);
+        const project = validate_project(req.params.project);
+        check_project_access(req, project);
         const result = await storageService.create_project_folder(project);
         if (result.created) {
             res.status(201).json({ message: 'Project created', project });
@@ -56,6 +58,7 @@ export async function create_project(req, res, next) {
 export async function delete_project(req, res, next) {
     try {
         const project = validate_project(req.params.project);
+        check_project_access(req, project);
         await storageService.delete_project_folder(project);
         res.json({ message: 'Project deleted successfully' });
     } catch (error) {

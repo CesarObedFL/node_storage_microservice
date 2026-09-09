@@ -33,6 +33,8 @@ export async function create_project_token(project, server) {
     if (res.status !== 201) {
         throw new Error(`Failed to create token: ${res.body.error || res.status}`);
     }
+    // Small delay to ensure token is written to disk
+    await new Promise(resolve => setTimeout(resolve, 50));
     return res.body.token;
 }
 

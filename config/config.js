@@ -33,14 +33,15 @@ const tokens_file_path = path.join(__dirname, 'tokens.json');
 // ---------- CORS ----------
 
 /**
- * Parses the CORS_ORIGINS environment variable into an array of allowed origins.
+ * Parses CORS origins from environment variable.
+ * Expects a comma‑separated list.
  *
- * @returns {string[]} Array of allowed origins (trimmed, non-empty).
+ * @returns {string[]} Array of allowed origins.
  */
 export function get_cors_origins() {
   const origins = process.env.CORS_ORIGINS || '';
   if (!origins) return [];
-  return origins.split(',').map((o) => o.trim()).filter((o) => o.length > 0);
+  return origins.split(',').map(o => o.trim()).filter(o => o.length > 0);
 }
 
 // ---------- Token management (dynamic tokens stored in tokens.json) ----------
@@ -133,3 +134,4 @@ export async function get_project_from_token(token) {
   const map = await load_token_map();
   return map.get(token) || null;
 }
+

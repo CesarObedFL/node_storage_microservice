@@ -37,3 +37,16 @@ export function validate_filename(filename) {
     }
     return filename.trim();
 }
+
+/**
+ * Checks that the token's project matches the requested project.
+ *
+ * @param {object} req - Express request object.
+ * @param {string} project - Project name from URL.
+ * @throws {AppError} 403 if mismatch.
+ */
+export function check_project_access(req, project) {
+  if (req.project !== project) {
+    throw new AppError('Token does not grant access to this project', 403);
+  }
+}

@@ -49,6 +49,14 @@ describe('Project management', () => {
         expect(res.body).toEqual({ message: 'Project already exists', project: TEST_PROJECT });
     });
 
+    it('should list all projects (public admin endpoint)', async () => {
+        const res = await request(server)
+            .get('/storage/admin/projects');
+        expect(res.status).toBe(200);
+        // The project created in previous tests (TEST_PROJECT) should be present
+        expect(res.body.projects).toContain(TEST_PROJECT);
+    });
+
     it('should delete the project (200)', async () => {
         const res = await request(server)
             .delete(`/storage/${TEST_PROJECT}`)
@@ -57,31 +65,14 @@ describe('Project management', () => {
         expect(res.body).toEqual({ message: 'Project deleted successfully' });
     });
 
-    it('should return 404 when deleting a non-existing project', async () => {
+    it('should return 403 when deleting a non‑existing project (token mismatch)', async () => {
         const res = await request(server)
             .delete(`/storage/non_existing_project_${Date.now()}`)
             .set('Authorization', `Bearer ${project_token}`);
-        expect(res.status).toBe(404);
-        expect(res.body).toHaveProperty('error', 'Project not found');
+        expect(res.status).toBe(403);   // changed from 404
+        expect(res.body.error).toMatch(/Token does not grant access/);
     });
-
-    it('should list all projects (public admin endpoint)', async () => {
-        // We need to create a project first to ensure it appears in the list.
-        // Since we deleted it, we'll create a new one for this test.
-        const newProject = 'list_test';
-        await request(server)
-            .post(`/storage/project/${newProject}`)
-            .set('Authorization', `Bearer ${project_token}`);
-        const res = await request(server)
-            .get('/storage/admin/projects');
-        expect(res.status).toBe(200);
-        expect(res.body.projects).toContain(newProject);
-        // Clean up
-        await request(server)
-            .delete(`/storage/${newProject}`)
-            .set('Authorization', `Bearer ${project_token}`);
-    });
-
+    
     describe('Admin routes with project token', () => {
         // These routes require master token, so project token should be rejected.
         it('should reject access to /storage/admin/tokens with project token', async () => {

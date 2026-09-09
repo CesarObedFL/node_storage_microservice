@@ -13,7 +13,7 @@
 // ================================================================
 
 import * as storageService from '../services/storage_service.js';
-import { validate_project, validate_filename } from '../utils/validation.js';
+import { validate_project, validate_filename, check_project_access } from '../utils/validation.js';
 import AppError from '../utils/error_handler.js';
 
 /**
@@ -31,6 +31,7 @@ import AppError from '../utils/error_handler.js';
 export async function list_files(req, res, next) {
     try {
         const project = validate_project(req.params.project);
+        check_project_access(req, project);
         const files = await storageService.list_project_files(project);
         res.json({ project, files });
     } catch (error) {
@@ -55,6 +56,7 @@ export async function get_file(req, res, next) {
     try {
         const filename = validate_filename(req.params.filename);
         const project = validate_project(req.params.project);
+        check_project_access(req, project);
         const data = await storageService.read_json_file(project, filename);
         res.json(data);
     } catch (error) {
@@ -79,12 +81,11 @@ export async function create_or_replace_file(req, res, next) {
     try {
         const filename = validate_filename(req.params.filename);
         const project = validate_project(req.params.project);
+        check_project_access(req, project);
         const data = req.body;
-
         if (typeof data !== 'object' || Array.isArray(data)) {
             throw new AppError('Request body must be a JSON object (not an array)', 400);
         }
-
         const saved_data = await storageService.write_json_file(project, filename, data, false);
         res.status(201).json({ message: 'File created/replaced', data: saved_data });
     } catch (error) {
@@ -109,6 +110,7 @@ export async function update_file(req, res, next) {
     try {
         const filename = validate_filename(req.params.filename);
         const project = validate_project(req.params.project);
+        check_project_access(req, project);
         const data = req.body;
 
         if (typeof data !== 'object' || Array.isArray(data)) {
@@ -139,6 +141,7 @@ export async function patch_file(req, res, next) {
     try {
         const filename = validate_filename(req.params.filename);
         const project = validate_project(req.params.project);
+        check_project_access(req, project);
         const data = req.body;
 
         if (typeof data !== 'object' || Array.isArray(data)) {

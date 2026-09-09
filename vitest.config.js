@@ -1,3 +1,4 @@
+// vitest.config.js
 import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
@@ -5,5 +6,14 @@ export default defineConfig({
         globals: true,
         environment: 'node',
         include: ['tests/**/*.test.js'],
+        pool: 'forks',
+        poolOptions: {
+            forks: {
+                singleFork: true,
+            },
+        },
+        env: {
+            CORS_ORIGINS: 'https://cesarobedfl.pro,https://solucionesyoas.com.mx',
+        },
     },
 });
