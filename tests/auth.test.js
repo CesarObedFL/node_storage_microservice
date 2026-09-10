@@ -41,7 +41,7 @@ describe('Authentication tests', () => {
     describe('Project token authentication', () => {
         it('should allow access to the correct project', async () => {
             const res = await request(server)
-                .post(`/storage/${TEST_PROJECT}/test.json/records`)
+                .post(`/${TEST_PROJECT}/test.json/records`)
                 .set('Authorization', `Bearer ${project_token}`)
                 .send({ test: 'ok' });
             expect(res.status).toBe(201);
@@ -50,7 +50,7 @@ describe('Authentication tests', () => {
 
         it('should deny access to a different project', async () => {
             const res = await request(server)
-                .post('/storage/other_project/test.json/records')
+                .post('/other_project/test.json/records')
                 .set('Authorization', `Bearer ${project_token}`)
                 .send({ test: 'fail' });
             expect(res.status).toBe(403);
@@ -59,7 +59,7 @@ describe('Authentication tests', () => {
 
         it('should reject invalid token', async () => {
             const res = await request(server)
-                .post(`/storage/${TEST_PROJECT}/test.json/records`)
+                .post(`/${TEST_PROJECT}/test.json/records`)
                 .set('Authorization', 'Bearer invalid_token')
                 .send({ test: 'fail' });
             expect(res.status).toBe(401);
@@ -68,7 +68,7 @@ describe('Authentication tests', () => {
 
         it('should reject missing token', async () => {
             const res = await request(server)
-                .post(`/storage/${TEST_PROJECT}/test.json/records`)
+                .post(`/${TEST_PROJECT}/test.json/records`)
                 .send({ test: 'fail' });
             expect(res.status).toBe(401);
             expect(res.body.error).toContain('Missing or invalid Authorization header');
@@ -81,7 +81,7 @@ describe('Authentication tests', () => {
     describe('Admin routes with master token', () => {
         it('should list tokens with master token', async () => {
             const res = await request(server)
-                .get('/storage/admin/tokens')
+                .get('/admin/tokens')
                 .set('Authorization', `Bearer ${master_token}`);
             expect(res.status).toBe(200);
             expect(res.body).toHaveProperty('tokens');
@@ -89,7 +89,7 @@ describe('Authentication tests', () => {
 
         it('should create a token with master token', async () => {
             const res = await request(server)
-                .post('/storage/admin/tokens')
+                .post('/admin/tokens')
                 .set('Authorization', `Bearer ${master_token}`)
                 .send({ project: 'new_project' });
             expect(res.status).toBe(201);
@@ -98,7 +98,7 @@ describe('Authentication tests', () => {
 
         it('should reject admin access with project token', async () => {
             const res = await request(server)
-                .get('/storage/admin/tokens')
+                .get('/admin/tokens')
                 .set('Authorization', `Bearer ${project_token}`);
             expect(res.status).toBe(401);
             expect(res.body.error).toContain('Invalid master token');

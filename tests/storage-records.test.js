@@ -3,8 +3,8 @@
 // Tests for record (array) CRUD operations
 // ================================================================
 // Covers:
-//   - Adding records (POST /storage/:project/:filename/records)
-//   - Listing records (GET /storage/:project/:filename/records)
+//   - Adding records (POST /:project/:filename/records)
+//   - Listing records (GET /:project/:filename/records)
 //   - Getting a single record (GET .../records/:id)
 //   - Updating a record (PUT .../records/:id)
 //   - Deleting a record (DELETE .../records/:id)
@@ -32,7 +32,7 @@ describe('Record operations', () => {
         project_token = await create_project_token(TEST_PROJECT, server);
         // Ensure project exists
         await request(server)
-            .post(`/storage/project/${TEST_PROJECT}`)
+            .post(`/project/${TEST_PROJECT}`)
             .set('Authorization', `Bearer ${project_token}`);
     });
 
@@ -45,7 +45,7 @@ describe('Record operations', () => {
     it('should add a record (POST) - 201', async () => {
         const record = { name: 'Alice', age: 30 };
         const res = await request(server)
-            .post(`/storage/${TEST_PROJECT}/${RECORDS_FILE}/records`)
+            .post(`/${TEST_PROJECT}/${RECORDS_FILE}/records`)
             .set('Authorization', `Bearer ${project_token}`)
             .send(record);
         expect(res.status).toBe(201);
@@ -58,16 +58,16 @@ describe('Record operations', () => {
     it('should add another record (POST)', async () => {
         const record = { name: 'Bob', age: 25 };
         const res = await request(server)
-            .post(`/storage/${TEST_PROJECT}/${RECORDS_FILE}/records`)
+            .post(`/${TEST_PROJECT}/${RECORDS_FILE}/records`)
             .set('Authorization', `Bearer ${project_token}`)
             .send(record);
         expect(res.status).toBe(201);
         expect(res.body).toHaveProperty('id');
     });
 
-    it('should list all records (GET /storage/:project/:filename/records)', async () => {
+    it('should list all records (GET /:project/:filename/records)', async () => {
         const res = await request(server)
-            .get(`/storage/${TEST_PROJECT}/${RECORDS_FILE}/records`)
+            .get(`/${TEST_PROJECT}/${RECORDS_FILE}/records`)
             .set('Authorization', `Bearer ${project_token}`);
         expect(res.status).toBe(200);
         expect(res.body).toHaveProperty('records');
@@ -79,7 +79,7 @@ describe('Record operations', () => {
 
     it('should get a single record by ID (GET .../records/:id)', async () => {
         const res = await request(server)
-            .get(`/storage/${TEST_PROJECT}/${RECORDS_FILE}/records/${recordId}`)
+            .get(`/${TEST_PROJECT}/${RECORDS_FILE}/records/${recordId}`)
             .set('Authorization', `Bearer ${project_token}`);
         expect(res.status).toBe(200);
         expect(res.body).toHaveProperty('record');
@@ -89,7 +89,7 @@ describe('Record operations', () => {
     it('should return 404 when record ID does not exist', async () => {
         const fakeId = 'non_existing_id';
         const res = await request(server)
-            .get(`/storage/${TEST_PROJECT}/${RECORDS_FILE}/records/${fakeId}`)
+            .get(`/${TEST_PROJECT}/${RECORDS_FILE}/records/${fakeId}`)
             .set('Authorization', `Bearer ${project_token}`);
         expect(res.status).toBe(404);
         expect(res.body).toHaveProperty('error', 'Record not found');
@@ -98,7 +98,7 @@ describe('Record operations', () => {
     it('should update (PUT) a record (merge)', async () => {
         const update = { age: 31 };
         const res = await request(server)
-            .put(`/storage/${TEST_PROJECT}/${RECORDS_FILE}/records/${recordId}`)
+            .put(`/${TEST_PROJECT}/${RECORDS_FILE}/records/${recordId}`)
             .set('Authorization', `Bearer ${project_token}`)
             .send(update);
         expect(res.status).toBe(200);
@@ -108,7 +108,7 @@ describe('Record operations', () => {
 
     it('should delete a record by ID (DELETE .../records/:id)', async () => {
         const res = await request(server)
-            .delete(`/storage/${TEST_PROJECT}/${RECORDS_FILE}/records/${recordId}`)
+            .delete(`/${TEST_PROJECT}/${RECORDS_FILE}/records/${recordId}`)
             .set('Authorization', `Bearer ${project_token}`);
         expect(res.status).toBe(200);
         expect(res.body).toEqual({ message: 'Record deleted' });
@@ -117,7 +117,7 @@ describe('Record operations', () => {
     it('should return 404 when deleting a non-existing record', async () => {
         const fakeId = 'non_existing_id';
         const res = await request(server)
-            .delete(`/storage/${TEST_PROJECT}/${RECORDS_FILE}/records/${fakeId}`)
+            .delete(`/${TEST_PROJECT}/${RECORDS_FILE}/records/${fakeId}`)
             .set('Authorization', `Bearer ${project_token}`);
         expect(res.status).toBe(404);
         expect(res.body).toHaveProperty('error', 'Record not found');
@@ -128,7 +128,7 @@ describe('Record operations', () => {
         const objFile = 'object_file.json';
         const objData = { initial: 'data' };
         await request(server)
-            .post(`/storage/${TEST_PROJECT}/${objFile}`)
+            .post(`/${TEST_PROJECT}/${objFile}`)
             .set('Authorization', `Bearer ${project_token}`)
             .send(objData)
             .expect(201);
@@ -136,7 +136,7 @@ describe('Record operations', () => {
         // Now add a record to that file (should convert it to an array)
         const newRecord = { from: 'object' };
         const res = await request(server)
-            .post(`/storage/${TEST_PROJECT}/${objFile}/records`)
+            .post(`/${TEST_PROJECT}/${objFile}/records`)
             .set('Authorization', `Bearer ${project_token}`)
             .send(newRecord);
         expect(res.status).toBe(201);
@@ -144,7 +144,7 @@ describe('Record operations', () => {
 
         // Verify the file is now an array with two records
         const listRes = await request(server)
-            .get(`/storage/${TEST_PROJECT}/${objFile}/records`)
+            .get(`/${TEST_PROJECT}/${objFile}/records`)
             .set('Authorization', `Bearer ${project_token}`);
         expect(listRes.status).toBe(200);
         expect(listRes.body.records).toHaveLength(2);

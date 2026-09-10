@@ -3,9 +3,9 @@
 // Tests for project management endpoints
 // ================================================================
 // Covers:
-//   - Creating a project (POST /storage/project/:project_name)
-//   - Deleting a project (DELETE /storage/:project)
-//   - Listing all projects (GET /storage/admin/projects)
+//   - Creating a project (POST /project/:project_name)
+//   - Deleting a project (DELETE /:project)
+//   - Listing all projects (GET /admin/projects)
 //   - Admin routes with project token (should return 401)
 //
 // @see ../routes/index.js
@@ -19,7 +19,7 @@ import { clear_tokens_file, create_project_token } from './helpers.js';
 describe('Project management', () => {
     let server;
     let project_token;
-    const TEST_PROJECT = 'test_project';
+    const TEST_PROJECT = `test_project_${Date.now()}`;
 
     beforeAll(async () => {
         await clear_tokens_file();
@@ -35,7 +35,7 @@ describe('Project management', () => {
 
     it('should create a new project (201)', async () => {
         const res = await request(server)
-            .post(`/storage/project/${TEST_PROJECT}`)
+            .post(`/project/${TEST_PROJECT}`)
             .set('Authorization', `Bearer ${project_token}`);
         expect(res.status).toBe(201);
         expect(res.body).toEqual({ message: 'Project created', project: TEST_PROJECT });
@@ -43,7 +43,7 @@ describe('Project management', () => {
 
     it('should return 200 if project already exists', async () => {
         const res = await request(server)
-            .post(`/storage/project/${TEST_PROJECT}`)
+            .post(`/project/${TEST_PROJECT}`)
             .set('Authorization', `Bearer ${project_token}`);
         expect(res.status).toBe(200);
         expect(res.body).toEqual({ message: 'Project already exists', project: TEST_PROJECT });
@@ -51,7 +51,7 @@ describe('Project management', () => {
 
     it('should list all projects (public admin endpoint)', async () => {
         const res = await request(server)
-            .get('/storage/admin/projects');
+            .get('/admin/projects');
         expect(res.status).toBe(200);
         // The project created in previous tests (TEST_PROJECT) should be present
         expect(res.body.projects).toContain(TEST_PROJECT);
@@ -59,7 +59,7 @@ describe('Project management', () => {
 
     it('should delete the project (200)', async () => {
         const res = await request(server)
-            .delete(`/storage/${TEST_PROJECT}`)
+            .delete(`/${TEST_PROJECT}`)
             .set('Authorization', `Bearer ${project_token}`);
         expect(res.status).toBe(200);
         expect(res.body).toEqual({ message: 'Project deleted successfully' });
@@ -67,7 +67,7 @@ describe('Project management', () => {
 
     it('should return 403 when deleting a non‑existing project (token mismatch)', async () => {
         const res = await request(server)
-            .delete(`/storage/non_existing_project_${Date.now()}`)
+            .delete(`/non_existing_project_${Date.now()}`)
             .set('Authorization', `Bearer ${project_token}`);
         expect(res.status).toBe(403);   // changed from 404
         expect(res.body.error).toMatch(/Token does not grant access/);
@@ -75,9 +75,9 @@ describe('Project management', () => {
     
     describe('Admin routes with project token', () => {
         // These routes require master token, so project token should be rejected.
-        it('should reject access to /storage/admin/tokens with project token', async () => {
+        it('should reject access to /admin/tokens with project token', async () => {
             const res = await request(server)
-                .get('/storage/admin/tokens')
+                .get('/admin/tokens')
                 .set('Authorization', `Bearer ${project_token}`);
             expect(res.status).toBe(401);
             expect(res.body.error).toMatch(/Invalid master token/);
@@ -85,7 +85,7 @@ describe('Project management', () => {
 
         it('should reject creation of token with project token', async () => {
             const res = await request(server)
-                .post('/storage/admin/tokens')
+                .post('/admin/tokens')
                 .set('Authorization', `Bearer ${project_token}`)
                 .send({ project: 'hack_project' });
             expect(res.status).toBe(401);

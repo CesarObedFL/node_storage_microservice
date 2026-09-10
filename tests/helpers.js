@@ -27,14 +27,14 @@ export async function clear_tokens_file() {
  */
 export async function create_project_token(project, server) {
     const res = await request(server)
-        .post('/storage/admin/tokens')
+        .post('/admin/tokens')
         .set('Authorization', `Bearer ${master_token}`)
         .send({ project });
     if (res.status !== 201) {
         throw new Error(`Failed to create token: ${res.body.error || res.status}`);
     }
     // Small delay to ensure token is written to disk
-    await new Promise(resolve => setTimeout(resolve, 50));
+    await new Promise(resolve => setTimeout(resolve, 100));
     return res.body.token;
 }
 

@@ -42,12 +42,12 @@ describe('Token management (admin API)', () => {
     };
 
     // ============================================================
-    // POST /storage/admin/tokens
+    // POST /admin/tokens
     // ============================================================
-    describe('POST /storage/admin/tokens', () => {
+    describe('POST /admin/tokens', () => {
         it('should create a new token (201)', async () => {
             const project = 'new_project';
-            const res = await admin_request('post', '/storage/admin/tokens', { project });
+            const res = await admin_request('post', '/admin/tokens', { project });
             expect(res.status).toBe(201);
             expect(res.body).toHaveProperty('message', 'Token created');
             expect(res.body).toHaveProperty('token');
@@ -55,20 +55,20 @@ describe('Token management (admin API)', () => {
         });
 
         it('should return 400 if project name is missing', async () => {
-            const res = await admin_request('post', '/storage/admin/tokens', {});
+            const res = await admin_request('post', '/admin/tokens', {});
             expect(res.status).toBe(400);
             expect(res.body).toHaveProperty('error', 'Project name is required');
         });
 
         it('should return 400 if project name has invalid characters', async () => {
-            const res = await admin_request('post', '/storage/admin/tokens', { project: 'bad@project' });
+            const res = await admin_request('post', '/admin/tokens', { project: 'bad@project' });
             expect(res.status).toBe(400);
             expect(res.body).toHaveProperty('error', 'Project name can only contain letters, numbers, and underscores');
         });
 
         it('should return 401 if master token is invalid', async () => {
             const res = await request(server)
-                .post('/storage/admin/tokens')
+                .post('/admin/tokens')
                 .set('Authorization', `Bearer ${INVALID_TOKEN}`)
                 .send({ project: 'test' });
             expect(res.status).toBe(401);
@@ -77,11 +77,11 @@ describe('Token management (admin API)', () => {
     });
 
     // ============================================================
-    // GET /storage/admin/tokens
+    // GET /admin/tokens
     // ============================================================
-    describe('GET /storage/admin/tokens', () => {
+    describe('GET /admin/tokens', () => {
         it('should list all tokens (200)', async () => {
-            const res = await admin_request('get', '/storage/admin/tokens');
+            const res = await admin_request('get', '/admin/tokens');
             expect(res.status).toBe(200);
             expect(res.body).toHaveProperty('tokens');
             expect(typeof res.body.tokens).toBe('object');
@@ -89,7 +89,7 @@ describe('Token management (admin API)', () => {
 
         it('should return 401 if master token is invalid', async () => {
             const res = await request(server)
-                .get('/storage/admin/tokens')
+                .get('/admin/tokens')
                 .set('Authorization', `Bearer ${INVALID_TOKEN}`);
             expect(res.status).toBe(401);
             expect(res.body).toHaveProperty('error', 'Invalid master token');
@@ -97,12 +97,12 @@ describe('Token management (admin API)', () => {
     });
 
     // ============================================================
-    // DELETE /storage/admin/tokens/:token
+    // DELETE /admin/tokens/:token
     // ============================================================
-    describe('DELETE /storage/admin/tokens/:token', () => {
+    describe('DELETE /admin/tokens/:token', () => {
         beforeEach(async () => {
             // Create a token for testing revocation
-            const res = await admin_request('post', '/storage/admin/tokens', { project: 'temp_project' });
+            const res = await admin_request('post', '/admin/tokens', { project: 'temp_project' });
             if (res.status === 201) {
                 created_token = res.body.token;
             } else {
@@ -120,20 +120,20 @@ describe('Token management (admin API)', () => {
         });
 
         it('should revoke a token (200)', async () => {
-            const res = await admin_request('delete', `/storage/admin/tokens/${created_token}`);
+            const res = await admin_request('delete', `/admin/tokens/${created_token}`);
             expect(res.status).toBe(200);
             expect(res.body).toHaveProperty('message', 'Token revoked successfully');
         });
 
         it('should return 404 if token does not exist', async () => {
-            const res = await admin_request('delete', '/storage/admin/tokens/non_existing_token');
+            const res = await admin_request('delete', '/admin/tokens/non_existing_token');
             expect(res.status).toBe(404);
             expect(res.body).toHaveProperty('error', 'Token not found');
         });
 
         it('should return 401 if master token is invalid', async () => {
             const res = await request(server)
-                .delete(`/storage/admin/tokens/${created_token}`)
+                .delete(`/admin/tokens/${created_token}`)
                 .set('Authorization', `Bearer ${INVALID_TOKEN}`);
             expect(res.status).toBe(401);
             expect(res.body).toHaveProperty('error', 'Invalid master token');
