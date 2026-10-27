@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'node_storage_microservice',
+      name: 'storage_microservice',
       script: './server.js',
       watch: false,
       instances: 1,
